@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.preloading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 9999;
+}
+svg {
+	font-family: 'Russo One', sans-serif;
+	position: absolute; 
+	width: 100%; height: 100%;
+}
+
+.pre-title1{
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	font-size: 140px;
+	animation-name: pretitle1;
+}
+.pre-title2{
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	font-size: 140px;
+	animation-name: pretitle2;
+}
+.pre-title3{
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	font-size: 140px;
+	animation-name: pretitle3;
+}
+
+@keyframes pretitle1 {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(54,95,160,1); stroke: rgba(54,95,160,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+@keyframes pretitle2 {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: #f8414a;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: #f8414a; }
+	80%  {fill: rgba(72,138,20,0); stroke: #f8414a; stroke-width: 3; }
+	100% {
+		fill: #f8414a; stroke: rgba(54,95,160,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+@keyframes pretitle3 {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: #f8414a;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: #f8414a; }
+	80%  {fill: rgba(72,138,20,0); stroke: #f8414a; stroke-width: 3; }
+	100% {
+		fill: #f8414a; stroke: rgba(54,95,160,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+svg text {
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	/* stroke: #365fa0; */
+	/* stroke: white; */
+	font-size: 140px;
+	animation-name: stroke;
+}
+
+/* @keyframes stroke {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+} */
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); }
+	80%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); stroke-width: 3; }
+	100% {
+		fill: rgb(255, 255, 255); stroke: rgba(54,95,160,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}

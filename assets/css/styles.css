@@ -583,7 +583,8 @@ nav input{
 }
 .button:hover{
   opacity: 0.8;
-  background-color: var(--first-color-dark);
+  background-color: #34efdf;
+  color: black;
 }
 .button-light{
   background-color: var(--first-color-light);
@@ -659,7 +660,7 @@ nav input{
   color: #fff;
 }
 .content .list label:hover{
-  color: #6d50e2;
+  color: #f8414a;
 }
 .content .slider{
   position: absolute;
@@ -668,7 +669,7 @@ nav input{
   height: 60px;
   width: 100%;
   border-radius: 12px;
-  background: #6d50e2;
+  background: #f8414a;
   transition: all 0.4s ease;
 }
 #home-ab:checked ~ .list .slider{

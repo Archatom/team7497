@@ -1,13 +1,3 @@
-body {
-  margin: 0;
-  background-color: #1d1d1e;
-  font-family: "Roboto", sans-serif;
-}
-
-* {
-  outline: none;
-}
-
 .timeline-carousel {
   padding: 86px 6.9444% 90px 6.9444%;
   padding-top: 0;

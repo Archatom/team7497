@@ -33,7 +33,7 @@
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="./assets/css/styles-timeline.css">
 
-    <title>FRC 7497</title>
+    <title>FRC Team 7497</title>
 
 </head>
 
@@ -46,24 +46,69 @@
 
     <!--===== HEADER =====-->
     <header class="l-header" id="header">
-        <nav class="nav bd-container">
-            <a href="./index.html" class="nav__logo"><img class="logo" src="./assets/img/FRC__newlogo.png" alt="">
-                <span style="font-size: 30px;"> FRC 7497</span></a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link active-link">About</a></li>
-                    <li class="nav__item"><a href="#sponsors" class="nav__link">Sponsors</a></li>
-                    <li class="nav__item"><a href="#qualification" class="nav__link">Activity</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Study</a></li>
-                    <!-- <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li> -->
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        <nav>
+            <div class="wrapper nav bd-container">
+                <a href="#home" class="nav__logo"><img class="logo" src="./assets/img/FRC__newlogo.png" alt=""><span
+                        style="font-size: 30px;">FRC 7497</span></a>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li><a href="#home" class="nav__link nav__item">Home</a></li>
+                    <li>
+                        <a href="#about" class="desktop-item nav__link nav__item">About</a>
+                        <input type="checkbox" id="showDrop">
+                        <label for="showDrop" class="mobile-item">About</label>
+                        <ul class="drop-menu">
+                            <li><a href="#about">FRC Team 7497</a></li>
+                            <li><a href="#">What's FRC</a></li>
+                            <li><a href="./about.html">Team 7497 History</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-item nav__link nav__item">Portfolio</a>
+                        <input type="checkbox" id="showMega">
+                        <label for="showMega" class="mobile-item">Portfolio</label>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row">
+                                    <img src="img.jpg" alt="">
+                                </div>
+                                <div class="row">
+                                    <header>Design Services</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Graphics</a></li>
+                                        <li><a href="#">Vectors</a></li>
+                                        <li><a href="#">Business cards</a></li>
+                                        <li><a href="#">Custom logo</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Email Services</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Personal Email</a></li>
+                                        <li><a href="#">Business Email</a></li>
+                                        <li><a href="#">Mobile Email</a></li>
+                                        <li><a href="#">Web Marketing</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Security services</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Site Seal</a></li>
+                                        <li><a href="#">VPS Hosting</a></li>
+                                        <li><a href="#">Privacy Seal</a></li>
+                                        <li><a href="#">Website design</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#about" class="nav__link nav__item">Study</a></li>
+                    <li><a href="#" class="nav__link nav__item">Contact us</a></li>
                 </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
             </div>
         </nav>
     </header>

@@ -1,43 +1,43 @@
-new WOW().init();
 /*===== SHOW MENU =====*/
-const showMenu = (toggleId, navId) => {
-    const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
+// const showMenu = (toggleId, navId) => {
+//     const toggle = document.getElementById(toggleId),
+//         nav = document.getElementById(navId)
 
-    if (toggle && nav) {
-        toggle.addEventListener('click', () => {
-            nav.classList.toggle('show-menu')
-        })
-    }
-}
-showMenu('nav-toggle', 'nav-menu')
+//     if (toggle && nav) {
+//         toggle.addEventListener('click', () => {
+//             nav.classList.toggle('show-menu')
+//         })
+//     }
+// }
+// showMenu('nav-toggle', 'nav-menu')
 /*===== REMOVE MENU MOBILE =====*/
-const navLink = document.querySelectorAll('.nav__link')
+// const navLink = document.querySelectorAll('.nav__link')
 
-function linkAction() {
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show-menu')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
+// function linkAction() {
+//     const navMenu = document.getElementById('nav-menu')
+//     navMenu.classList.remove('show-menu')
+// }
+// navLink.forEach(n => n.addEventListener('click', linkAction))
 /*===== SCROLL SECTIONS ACTIVE LINK =====*/
-const sections = document.querySelectorAll('section[id]')
+// const sections = document.querySelectorAll('section[id]')
 
-function scrollActive() {
-    const scrollY = window.pageYOffset
+// function scrollActive() {
+//     const scrollY = window.pageYOffset
 
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50
-        sectionId = current.getAttribute('id')
+//     sections.forEach(current => {
+//         const sectionHeight = current.offsetHeight
+//         const sectionTop = current.offsetTop - 50
+//         sectionId = current.getAttribute('id')
 
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        } else {
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
+//         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+//         } else {
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+//         }
+//     })
+// }
+// window.addEventListener('scroll', scrollActive)
+
 /*===== CHANGE BACKGROUND HEADER =====*/
 function scrollHeader() {
     const header = document.getElementById('header')
@@ -88,6 +88,43 @@ const swiper = new Swiper('.testimonial__container', {
         },
     }
 })
+/*=============== ACCORDION ===============*/
+const accordionItems = document.querySelectorAll('.accordion__item')
+
+// 1. Selecionar cada item
+accordionItems.forEach((item) => {
+    const accordionHeader = item.querySelector('.accordion__header')
+
+    // 2. Seleccionar cada click del header
+    accordionHeader.addEventListener('click', () => {
+        // 7. Crear la variable
+        const openItem = document.querySelector('.accordion-open')
+
+        // 5. Llamar a la funcion toggle item
+        toggleItem(item)
+
+        // 8. Validar si existe la clase
+        if (openItem && openItem !== item) {
+            toggleItem(openItem)
+        }
+    })
+})
+
+// 3. Crear una funcion tipo constante
+const toggleItem = (item) => {
+    // 3.1 Crear la variable
+    const accordionContent = item.querySelector('.accordion__content')
+
+    // 6. Si existe otro elemento que contenga la clase accorion-open que remueva su clase
+    if (item.classList.contains('accordion-open')) {
+        accordionContent.removeAttribute('style')
+        item.classList.remove('accordion-open')
+    } else {
+        // 4. Agregar el height maximo del content
+        accordionContent.style.height = accordionContent.scrollHeight + 'px'
+        item.classList.add('accordion-open')
+    }
+}
 /*===== GSAP ANIMATION =====*/
 gsap.from('.home__img', { opacity: 0, duration: 2, delay: .5, x: 60 })
 gsap.from('.home__data', { opacity: 0, duration: 2, delay: .8, y: 25 })
@@ -96,10 +133,5 @@ gsap.from('.nav__logo, .nav__toggle', { opacity: 0, duration: 2, delay: 1.5, y: 
 gsap.from('.nav__item', { opacity: 0, duration: 2, delay: 1.8, y: 25, ease: 'expo.out', stagger: .2 })
 gsap.from('.home__social-icon', { opacity: 0, duration: 2, delay: 2.3, y: 25, ease: 'expo.out', stagger: .2 })
 
-// preloading
-
-$(document).ready(function () {
-    setTimeout(function () {
-        $(".preloading").fadeOut(1000);
-    }, 8000);
-});
+// WoW.js
+new WOW().init();

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="臺北市立成功高級中學FRC工業機器人社team7497" />
+    <meta name="description" content="FRCteam7497" />
+    <meta name="robots" content="noindex,nofollow">
+    <!-- preload -->
+    <link rel="preload" as="image" href="./assets/img/FRC__newlogo.png">
+    <link rel="preload" as="image" href="./assets/img/newlogohome.png">
+    <link rel="preload" as="style" href="./assets/css/swiper-bundle.min.css">
+    <link rel="preload" as="style" href="./assets/css/timeline.css">
+    <link rel="preload" as="style" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="preconnect" href="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    <link rel="preload" as="script" href="./assets/js/main.js">
+    <link rel="preload" as="script" href="./assets/js/gsap.min.js">
+    <link rel="preload" as="script" href="./assets/js/mixitup.min.js">
+    <link rel="preload" as="script" href="./assets/js/swiper-bundle.min.js">
+
+    <!-- ===== icon shortcut ===== -->
+    <link rel="icon shortcut" href="./assets/img/FRC__newlogo.png">
+
+    <!-- ===== navbar ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- ===== SWIPER CSS ===== -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css?_cacheOverride=1636013040059">
+
+    <!-- Animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css">
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!-- timeline css -->
+    <link rel="stylesheet" href="./assets/css/timeline.css">
+
+    <!-- slick css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>Team 7497 | MARAHO</title>
+
+</head>
+
+<body>
+    <!-- <model-viewer loading="eager" src="assets\gltf\robot-processed.glb" auto-rotate camera-controls>
+    </model-viewer> -->
+    <!--===== SCROLL TOP =====-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+        <!-- <nav class="nav bd-container">
+            <a href="#home" class="nav__logo"><img class="logo" src="./assets/img/FRC__newlogo.png" alt=""><span
+                    style="font-size: 30px;">FRC 7497</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">portfolio</a></li>
+                    <li class="nav__item"><a href="#sponsors" class="nav__link">Sponsors</a></li>
+                    <li class="nav__item"><a href="#qualification" class="nav__link">Activity</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Study</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav> -->
+        <nav>
+            <div class="wrapper nav bd-container">
+                <a href="./index.html" class="nav__logo nav__link"><img class="logo" src="./assets/img/FRC__newlogo.png"
+                        alt=""><span style="font-size: 30px;">FRC 7497</span></a>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li>
+                        <a href="./index.html" class="desktop-item nav__link nav__item">Home</a>
+                        <input type="checkbox" id="showDrop1">
+                        <label for="showDrop1"><a href="./index.html" class="mobile-item">Home</a></label>
+                    </li>
+                    <li>
+                        <a href="#about" class="desktop-item nav__link nav__item">About</a>
+                        <input type="checkbox" id="showDrop2">
+                        <label for="showDrop2" class="mobile-item">About</label>
+                        <ul class="drop-menu">
+                            <li><a href="#about">FRC Team 7497</a></li>
+                            <li><a href="#">What's FRC</a></li>
+                            <li><a href="">Team 7497 History</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-item nav__link nav__item">Robots</a>
+                        <input type="checkbox" id="showDrop3">
+                        <label for="showDrop3" class="mobile-item">Robots</label>
+                        <ul class="drop-menu">
+                            <li><a href="#">2019</a></li>
+                            <li><a href="#">2020</a></li>
+                            <li><a href="#">2020</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-item nav__link nav__item">Group</a>
+                        <input type="checkbox" id="showMega1">
+                        <label for="showMega1" class="mobile-item">Group</label>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row">
+                                    <img src="./assets/img/newlogohome.png" alt="">
+                                </div>
+                                <div class="row">
+                                    <header>Robot Design</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Graphics</a></li>
+                                        <li><a href="#">Vectors</a></li>
+                                        <li><a href="#">Business cards</a></li>
+                                        <li><a href="#">Custom logo</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Mechanics</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Personal Email</a></li>
+                                        <li><a href="#">Business Email</a></li>
+                                        <li><a href="#">Mobile Email</a></li>
+                                        <li><a href="#">Web Marketing</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Programming</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Site Seal</a></li>
+                                        <li><a href="#">VPS Hosting</a></li>
+                                        <li><a href="#">Privacy Seal</a></li>
+                                        <li><a href="#">Website design</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-item nav__link nav__item">Portfolio</a>
+                        <input type="checkbox" id="showMega2">
+                        <label for="showMega2" class="mobile-item">Portfolio</label>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row">
+                                    <img src="./assets/img/newlogohome.png" alt="">
+                                </div>
+                                <div class="row">
+                                    <header>Outreach</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Graphics</a></li>
+                                        <li><a href="#">Vectors</a></li>
+                                        <li><a href="#">Business cards</a></li>
+                                        <li><a href="#">Custom logo</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Photos</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Personal Email</a></li>
+                                        <li><a href="#">Business Email</a></li>
+                                        <li><a href="#">Mobile Email</a></li>
+                                        <li><a href="#">Web Marketing</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Vedios</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Site Seal</a></li>
+                                        <li><a href="#">VPS Hosting</a></li>
+                                        <li><a href="#">Privacy Seal</a></li>
+                                        <li><a href="#">Website design</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#about" class="desktop-item nav__link nav__item">Sponsors</a>
+                        <input type="checkbox" id="showDrop4">
+                        <label for="showDrop4" class="mobile-item">Sponsors</label>
+                        <ul class="drop-menu">
+                            <li><a href="#">Our Sponsors</a></li>
+                            <li><a href="#">Sponsor Us</a></li>
+                            <li><a href="#">2020</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars nav__link"></i></label>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+
+        <!--===== PORTFOLIO =====-->
+        <section class="portfolio qualification section bd-container" id="portfolio">
+            <span class="section-subtitle">Our recent works</span>
+            <h2 class="section-title">Portfolio</h2>
+
+            <div class="portfolio__nav">
+                <span class="portfolio__item active-portfolio" data-filter="all">All</span>
+                <span class="portfolio__item" data-filter=".web">Program</span>
+                <span class="portfolio__item" data-filter=".ux">Robot Design</span>
+                <span class="portfolio__item" data-filter=".app">Marketing</span>
+            </div>
+            <div class="portfolio__container bd-grid">
+
+                <div class="news-card portfolio__content mix">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing First Title</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                                pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio,
+                                pariatur&hellip;</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card portfolio__content mix">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing Second Title that is Quite Long</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ullam
+                                obcaecati ex natus nulla rem sequi laborum quod fugit&hellip;</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card portfolio__content mix ux">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing Title</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Officiis
+                                beatae&hellip;</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card portfolio__content mix ux">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/248486/pexels-photo-248486.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing Forth Title that is Quite Long</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet!</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card portfolio__content mix web">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/206660/pexels-photo-206660.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing Fifth Title</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                                pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt
+                                distinctio&hellip;</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card portfolio__content mix app">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing 6<sup>th</sup> Title</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                                pariatur nemo tempore repellat? Ullam sed officia.</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="portfolio__container bd-grid">
+                <div class="portfolio__content mix">
+                    <a href="#"><img src="./assets/img/gold.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Web development</span>
+                        <a href="#">
+                            <h2 class="portfolio__title">Lorem ipsum dolor sit amet.</h2>
+                        </a>
+                        <a href="#" class="button button-link">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix">
+                    <a href="#"><img src="./assets/img/sliver.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Web development</span>
+                        <a href="#">
+                            <h2 class="portfolio__title">Lorem ipsum dolor sit amet.</h2>
+                        </a>
+                        <a href="#" class="button button-link">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix ux">
+                    <a href="#"><img src="./assets/img/tatanium.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Ux design</span>
+                        <a href="#">
+                            <h2 class="portfolio__title">Lorem ipsum dolor sit amet.</h2>
+                        </a>
+                        <a href="#" class="button button-link">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix ux">
+                    <a href="#"><img src="./assets/img/copper.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Ux design</span>
+                        <a href="#">
+                            <h2 class="portfolio__title">Lorem ipsum dolor sit amet.</h2>
+                        </a>
+                        <a href="#" class="button button-link">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix app">
+                    <a href="#"><img src="./assets/img/work5.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Mobile app</span>
+                        <a href="#">
+                            <h2 class="portfolio__title">Lorem ipsum dolor sit amet.</h2>
+                        </a>
+                        <a href="#" class="button button-link">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix app">
+                    <a href="#"><img src="./assets/img/work6.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Mobile app</span>
+                        <a href="#">
+                            <h2 class="portfolio__title">Lorem ipsum dolor sit amet.</h2>
+                        </a>
+                        <a href="#" class="button button-link">View Details</a>
+                    </div>
+                </div>
+            </div> -->
+
+        </section>
+
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="footer__container bd-container">
+            <h1 class="footer__title">臺北市立成功高級中學 <br> FRC Team 7497</h1>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/FRC7497" class="footer__link"><i
+                        class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.instagram.com/team_7497/" class="footer__link"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.youtube.com/channel/UCfwhmJXKZv5R4YJ29Xoxz4w" class="footer__link"><i
+                        class='bx bxl-youtube'></i></a>
+            </div>
+            <p class="footer__copy">Copyright &#169; 2021 FRC Team 7497. All right reserved</p>
+            <p class="footer__copy">Last Version 9.24.2021</p>
+        </div>
+    </footer>
+
+    <!-- ===== MODEL-VIEWER ===== -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <!-- ===== MIXITUP FILTER ===== -->
+    <script src="./assets/js/mixitup.min.js"></script>
+
+    <!-- ===== SWIPER JS ===== -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- ===== GSAP ===== -->
+    <script src="./assets/js/gsap.min.js"></script>
+
+    <!-- ===== WOW JS ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- ===== jquery ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+
+    <!-- slick js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script src="./assets/js/timeline.js"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

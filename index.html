@@ -11,6 +11,15 @@
     <!-- preload -->
     <link rel="preload" as="image" href="./assets/img/FRC__newlogo.png">
     <link rel="preload" as="image" href="./assets/img/newlogohome.png">
+    <link rel="preload" as="image" href="./assets/img/copper.jpeg">
+    <link rel="preload" as="image" href="./assets/img/gold (2).png">
+    <link rel="preload" as="image" href="./assets/img/silver.jpeg">
+    <link rel="preload" as="image" href="./assets/img/tatanium (2).png">
+    <link rel="preload" as="image" href="./assets/img/about1.jpg">
+    <link rel="preload" as="image" href="./assets/img/about2.jpg">
+    <link rel="preload" as="image" href="./assets/img/about3.jpg">
+    <link rel="preload" as="image" href="./assets/img/about4.jpg">
+    <link rel="preload" as="image" href="./assets/img/about5.jpg">
     <link rel="preload" as="style" href="./assets/css/swiper-bundle.min.css">
     <link rel="preload" as="style" href="./assets/css/timeline.css">
     <link rel="preload" as="style" href="./assets/css/styles.css">
@@ -34,6 +43,9 @@
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css?_cacheOverride=1636013040059">
 
+    <!-- ===== google fonts ===== -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Animate.style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css">
 
@@ -50,7 +62,7 @@
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 
-    <title>Team 7497 | FRC MARAHO</title>
+    <title>Team 7497 | MARAHO</title>
 
 </head>
 
@@ -91,14 +103,9 @@
                 <ul class="nav-links">
                     <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
                     <li>
-                        <a href="#about" class="desktop-item nav__link nav__item">Home</a>
+                        <a href="./index.html" class="desktop-item nav__link nav__item">Home</a>
                         <input type="checkbox" id="showDrop1">
-                        <label for="showDrop1" class="mobile-item">Home</label>
-                        <ul class="drop-menu">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#history">Team 7497 大事記</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                        </ul>
+                        <label for="showDrop1"><a href="./index.html" class="mobile-item">Home</a></label>
                     </li>
                     <li>
                         <a href="#about" class="desktop-item nav__link nav__item">About</a>
@@ -106,9 +113,9 @@
                         <label for="showDrop2" class="mobile-item">About</label>
                         <ul class="drop-menu">
                             <li><a href="#about">FRC Team 7497</a></li>
-                            <li><a href="#">What's FRC</a></li>
-                            <li><a href="">Team 7497 History</a></li>
-                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#about">What's FRC</a></li>
+                            <li><a href="#history">Team 7497 History</a></li>
+                            <li><a href="#about">Q&A</a></li>
                         </ul>
                     </li>
                     <li>
@@ -116,9 +123,9 @@
                         <input type="checkbox" id="showDrop3">
                         <label for="showDrop3" class="mobile-item">Robots</label>
                         <ul class="drop-menu">
-                            <li><a href="#">2019</a></li>
-                            <li><a href="#">2020</a></li>
-                            <li><a href="#">2020</a></li>
+                            <li><a href="#robots">2019</a></li>
+                            <li><a href="#robots">2020</a></li>
+                            <li><a href="#robots">2020</a></li>
                         </ul>
                     </li>
                     <li>
@@ -161,7 +168,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#" class="desktop-item nav__link nav__item">Portfolio</a>
+                        <a href="./portfolio.html" class="desktop-item nav__link nav__item">Portfolio</a>
                         <input type="checkbox" id="showMega2">
                         <label for="showMega2" class="mobile-item">Portfolio</label>
                         <div class="mega-box">
@@ -204,9 +211,9 @@
                         <input type="checkbox" id="showDrop4">
                         <label for="showDrop4" class="mobile-item">Sponsors</label>
                         <ul class="drop-menu">
-                            <li><a href="#">Our Sponsors</a></li>
-                            <li><a href="#">Sponsor Us</a></li>
-                            <li><a href="#">2020</a></li>
+                            <li><a href="#sponsors">Our Sponsors</a></li>
+                            <li><a href="#sponsors">Sponsor Us</a></li>
+                            <li><a href="#sponsors">2020</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -236,8 +243,6 @@
                 </div>
 
                 <div class="home__img">
-                    <!-- <model-viewer loading="eager" src="assets\gltf\robot-processed.glb" auto-rotate camera-controls>
-                    </model-viewer> -->
                     <img src="./assets/img/newlogohome.png" alt="">
                 </div>
             </div>
@@ -248,71 +253,109 @@
             <span class="section-subtitle">FRC Team 7497</span>
             <h2 class="section-title">About us</h2>
 
-            <div class="content">
-                <input type="radio" name="slider" checked id="home-ab">
-                <input type="radio" name="slider" id="blog">
-                <input type="radio" name="slider" id="help">
-                <input type="radio" name="slider" id="code">
-                <input type="radio" name="slider" id="about">
-                <div class="list">
-                    <label for="home-ab" class="home-ab">
-                        <i class="fas fa-home"></i>
-                        <span class="title">Team 7497</span>
-                    </label>
-                    <label for="blog" class="blog">
-                        <!-- <span class="icon"><i class="fas fa-blog"></i></span> -->
-                        <i class="fas fa-blog"></i>
-                        <span class="title">What's FRC</span>
-                    </label>
-                    <label for="help" class="help">
-                        <i class="far fa-envelope"></i>
-                        <span class="title">Our History</span>
-                    </label>
-                    <label for="code" class="code">
-                        <i class="fas fa-code"></i>
-                        <span class="title">Code</span>
-                    </label>
-                    <div class="slider"></div>
-                </div>
-                <div class="text-content">
-                    <div class="home-ab text">
-                        <div class="title">Team7497</div>
-                        <p class="title-dp">我們隊伍自2019年創立，在2020年正式註冊
-                            MARAHO#7497。
-                            MARAHO是台灣的國蝶
-                            -寬尾鳳蝶，在泰雅族語中有
-                            「酋長」一意。
-                            象徵著我們隊伍拍動這小小翅膀，如同蝴蝶效應，在台灣推廣FRC。
-                            當我們專注在機器人競賽時也不忘回饋社會，每年皆會協助地方捐血活動、偏鄉推廣STEM教育。</p>
-                    </div>
-                    <div class="blog text">
-                        <div class="title">Blog Content</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tempora, unde
-                            reprehenderit incidunt excepturi blanditiis ullam dignissimos provident quam? Fugit,
-                            enim! Architecto ad officiis dignissimos ex quae iusto amet pariatur, ea eius aut velit,
-                            tempora magnam hic autem maiores unde corrupti tenetur delectus! Voluptatum praesentium
-                            labore consectetur ea qui illum illo distinctio, sunt, ipsam rerum optio quibusdam cum
-                            a? Aut facilis non fuga molestiae voluptatem omnis reprehenderit, dignissimos commodi
-                            repellat sapiente natus ipsam, ipsa distinctio. Ducimus repudiandae fuga aliquid,
-                            numquam.</p>
-                    </div>
-                    <div class="help text">
-                        <div class="title">Help Content</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores error neque, officia
-                            excepturi dolores quis dolor, architecto iusto deleniti a soluta nostrum. Fuga
-                            reiciendis beatae, dicta voluptatem, vitae eligendi maxime accusamus. Amet totam aut
-                            odio velit cumque autem neque sequi provident mollitia, nisi sunt maiores facilis
-                            debitis in officiis asperiores saepe quo soluta laudantium ad non quisquam! Repellendus
-                            culpa necessitatibus aliquam quod mollitia perspiciatis ducimus doloribus perferendis
-                            autem, omnis, impedit, veniam qui dolorem? Ipsam nihil assumenda, sit ratione blanditiis
-                            eius aliquam libero iusto, dolorum aut perferendis modi laboriosam sint dolor.</p>
-                    </div>
-                    <div class="code text">
-                        <div class="title">Code Content</div>
+            <div class="tabs">
 
-                    </div>
+                <input type="radio" name="tabs" id="tab1" checked>
+                <label for="tab1">
+                    <i class="fas fa-users" style="font-size: 30px;"></i><span>FRC Team 7497</span>
+                </label>
+
+                <input type="radio" name="tabs" id="tab2">
+                <label for="tab2">
+                    <i class="fas fa-robot" style="font-size: 30px;"></i><span>What's FRC</span>
+                </label>
+
+                <input type="radio" name="tabs" id="tab3">
+                <label for="tab3">
+                    <i class="fas fa-question" style="font-size: 30px;"></i><span>Q & A</span>
+                </label>
+
+                <div id="tab-content1" class="tab-content">
+                    <h3>FRC Team 7497</h3>
+                    <p>我們隊伍自2019年創立，在2020年正式註冊 MARAHO#7497。 MARAHO是台灣的國蝶 -寬尾鳳蝶，在泰雅族語中有 「酋長」一意。
+                        象徵著我們隊伍拍動這小小翅膀，如同蝴蝶效應，在台灣推廣FRC。 當我們專注在機器人競賽時也不忘回饋社會，每年皆會協助地方捐血活動、偏鄉推廣STEM教育。</p>
                 </div>
+
+                <div id="tab-content2" class="tab-content">
+                    <h3>CSS3 Snippets</h3>
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and
+                        formatting of a document written in a markup language.</p>
+
+                </div>
+
+                <div id="tab-content3" class="tab-content">
+
+                    <!-- <h3>jQuery</h3>
+                    <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document
+                        traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use
+                        API that works across a multitude of browsers.</p> -->
+                    <div class="about__data bd-grid">
+                        <div class="accordion__item">
+                            <header class="accordion__header">
+                                <i class='bx bx-plus accordion__icon'></i>
+                                <h3 class="accordion__title">What's an accordion?</h3>
+                            </header>
+
+                            <div class="accordion__content">
+                                <p class="accordion__description">
+                                    An accordion always contains the category title, an expanded and a collapsed
+                                    state,
+                                    an icon indicating expansion, and the spacing between them.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <header class="accordion__header">
+                                <i class='bx bx-plus accordion__icon'></i>
+                                <h3 class="accordion__title">When and how should it be used?</h3>
+                            </header>
+
+                            <div class="accordion__content">
+                                <p class="accordion__description">
+                                    It should be used when users only need a few key concepts or descriptions
+                                    of the content on a single page.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <header class="accordion__header">
+                                <i class='bx bx-plus accordion__icon'></i>
+                                <h3 class="accordion__title">What happens if the user clicks on a collapsed card
+                                    while
+                                    another card is open?</h3>
+                            </header>
+
+                            <div class="accordion__content">
+                                <p class="accordion__description">
+                                    It happens that the open card was closed, to give way to the information of the
+                                    next
+                                    open card, but there are different designs that prefer it the other way around.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <header class="accordion__header">
+                                <i class='bx bx-plus accordion__icon'></i>
+                                <h3 class="accordion__title">How to choose an icon to indicate expansion?</h3>
+                            </header>
+
+                            <div class="accordion__content">
+                                <p class="accordion__description">
+                                    You must choose a different icon to open and close, so that the user
+                                    understands what action he took.
+                                </p>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+
+                </div>
+
             </div>
+
             <!-- <div class="about__container bd-grid">
                 <div class="about__data bd-grid">
                     <p class="about__description wow slideInLeft"><span>Hello, We Are FRC Team 7497 <br></span>
@@ -348,74 +391,7 @@
                     </div>
                 </div>
                 <img class="about__img wow slideInRight" src="./assets/img/FRC_about_rm.png" alt=""> -->
-            <!-- <div class="about__data bd-grid">
-                <div class="accordion__item">
-                    <header class="accordion__header">
-                        <i class='bx bx-plus accordion__icon'></i>
-                        <h3 class="accordion__title">What's an accordion?</h3>
-                    </header>
 
-                    <div class="accordion__content">
-                        <p class="accordion__description">
-                            An accordion always contains the category title, an expanded and a collapsed
-                            state,
-                            an icon indicating expansion, and the spacing between them.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="accordion__item">
-                    <header class="accordion__header">
-                        <i class='bx bx-plus accordion__icon'></i>
-                        <h3 class="accordion__title">When and how should it be used?</h3>
-                    </header>
-
-                    <div class="accordion__content">
-                        <p class="accordion__description">
-                            It should be used when users only need a few key concepts or descriptions
-                            of the content on a single page.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="accordion__item">
-                    <header class="accordion__header">
-                        <i class='bx bx-plus accordion__icon'></i>
-                        <h3 class="accordion__title">What happens if the user clicks on a collapsed card
-                            while
-                            another card is open?</h3>
-                    </header>
-
-                    <div class="accordion__content">
-                        <p class="accordion__description">
-                            It happens that the open card was closed, to give way to the information of the
-                            next
-                            open card, but there are different designs that prefer it the other way around.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="accordion__item">
-                    <header class="accordion__header">
-                        <i class='bx bx-plus accordion__icon'></i>
-                        <h3 class="accordion__title">How to choose an icon to indicate expansion?</h3>
-                    </header>
-
-                    <div class="accordion__content">
-                        <p class="accordion__description">
-                            You must choose a different icon to open and close, so that the user
-                            understands what action he took.
-                        </p>
-                    </div>
-                </div>
-                </p>
-
-                <div class="wow slideInLeft">
-                    <span class="about__number">07</span>
-                    <span class="about__achievement">Best work awards</span>
-
-                </div>
-            </div> -->
             <!--===== PROJECT IN MIND =====-->
             <!-- <section class="project section bd-container" id="sponsor">
                 <div class="project__container br-grid">
@@ -715,9 +691,113 @@
         </section>
 
         <!--===== PORTFOLIO =====-->
-        <section class="portfolio qualification section bd-container" id="portfolio">
+        <!-- <section class="portfolio qualification section bd-container" id="portfolio">
             <span class="section-subtitle">Our recent works</span>
             <h2 class="section-title">Portfolio</h2>
+
+            <div class="content-wrapper">
+
+                <div class="news-card">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing First Title</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                                pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio,
+                                pariatur&hellip;</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing Second Title that is Quite Long</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ullam
+                                obcaecati ex natus nulla rem sequi laborum quod fugit&hellip;</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing Title</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Officiis
+                                beatae&hellip;</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/248486/pexels-photo-248486.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing Forth Title that is Quite Long</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet!</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/206660/pexels-photo-206660.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing Fifth Title</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                                pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt
+                                distinctio&hellip;</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing 6<sup>th</sup> Title</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                                pariatur nemo tempore repellat? Ullam sed officia.</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             <div class="portfolio__nav">
                 <span class="portfolio__item active-portfolio" data-filter="all">All</span>
                 <span class="portfolio__item" data-filter=".web">Program</span>
@@ -788,14 +868,520 @@
                 </div>
             </div>
 
+        </section> -->
+
+        <!--===== News =====-->
+
+
+        <!--===== Our Bots =====-->
+        <section class="testimonial qualification section bd-container" id="robots">
+            <span class="section-subtitle">The Robots</span>
+            <h2 class="section-title">Our Robots</h2>
+
+            <div class="services__container bd-grid">
+                <div class="wrapper-bots">
+                    <div class="container-bots">
+                        <div class="top"></div>
+                        <div class="bottom">
+                            <div class="left">
+                                <div class="details">
+                                    <h1>2020</h1>
+                                    <p>Team 7497</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon">View <br> 3D</div>
+                        <div class="contents">
+                            <!-- <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                            <tr>
+                                <th>Something</th>
+                                <th>Something</th>
+                            </tr>
+                            <tr>
+                                <td>200mm</td>
+                                <td>200mm</td>
+                            </tr>
+                            <tr>
+                                <th>Something</th>
+                                <th>Something</th>
+                            </tr>
+                            <tr>
+                                <td>200mm</td>
+                                <td>200mm</td>
+                            </tr>
+                            <tr>
+                                <th>Something</th>
+                                <th>Something</th>
+                            </tr>
+                            <tr>
+                                <td>200mm</td>
+                                <td>200mm</td>
+                            </tr>
+                        </table> -->
+                            <model-viewer style="width: 100%; height: 400px; border-radius: 10px;" alt=""
+                                src="assets\gltf\robot-processed.glb" auto-rotate seamless-poster shadow-intensity="1"
+                                camera-controls>
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper-bots">
+                    <div class="container-bots">
+                        <div class="top"></div>
+                        <div class="bottom">
+                            <div class="left">
+                                <div class="details">
+                                    <h1>2020</h1>
+                                    <p>Team 7497</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon">View <br> 3D</div>
+                        <div class="contents">
+                            <!-- <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                            <tr>
+                                <th>Something</th>
+                                <th>Something</th>
+                            </tr>
+                            <tr>
+                                <td>200mm</td>
+                                <td>200mm</td>
+                            </tr>
+                            <tr>
+                                <th>Something</th>
+                                <th>Something</th>
+                            </tr>
+                            <tr>
+                                <td>200mm</td>
+                                <td>200mm</td>
+                            </tr>
+                            <tr>
+                                <th>Something</th>
+                                <th>Something</th>
+                            </tr>
+                            <tr>
+                                <td>200mm</td>
+                                <td>200mm</td>
+                            </tr>
+                        </table> -->
+                            <model-viewer style="width: 100%; height: 400px; border-radius: 10px;" alt=""
+                                src="assets\gltf\robot-processed.glb" auto-rotate seamless-poster shadow-intensity="1"
+                                camera-controls>
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper-bots">
+                    <div class="container-bots">
+                        <div class="top"></div>
+                        <div class="bottom">
+                            <div class="left">
+                                <div class="details">
+                                    <h1>2020</h1>
+                                    <p>Team 7497</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon">View <br> 3D</div>
+                        <div class="contents">
+                            <!-- <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                            <tr>
+                                <th>Something</th>
+                                <th>Something</th>
+                            </tr>
+                            <tr>
+                                <td>200mm</td>
+                                <td>200mm</td>
+                            </tr>
+                            <tr>
+                                <th>Something</th>
+                                <th>Something</th>
+                            </tr>
+                            <tr>
+                                <td>200mm</td>
+                                <td>200mm</td>
+                            </tr>
+                            <tr>
+                                <th>Something</th>
+                                <th>Something</th>
+                            </tr>
+                            <tr>
+                                <td>200mm</td>
+                                <td>200mm</td>
+                            </tr>
+                        </table> -->
+                            <model-viewer style="width: 100%; height: 400px; border-radius: 10px;" alt=""
+                                src="assets\gltf\robot-processed.glb" auto-rotate seamless-poster shadow-intensity="1"
+                                camera-controls>
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
+
+
         <!--===== Sponsors =====-->
-        <!-- <section class="testimonial qualification section bd-container" id="sponsors">
+        <section class="testimonial qualification section bd-container" id="sponsors">
             <span class="section-subtitle">Testimonial</span>
             <h2 class="section-title">Our Sponsors</h2>
 
-            <div class="testimonial__container swiper-container">
+            <div class="wrapper-sponsor">
+                <div class="card-sponsor">
+                    <input type="checkbox" id="card3" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/tatanium\ \(2\).png')">
+                            <div class="inner">
+                                <h2>Tatanium</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <label for="card3" class="button-sponsor" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <div class="info">
+                                    <span>8</span>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                        <span>people</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span>7</span>
+                                    <div class="icon">
+                                        <i class="fas fa-door-open"></i>
+                                        <span>rooms</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span>5</span>
+                                    <div class="icon">
+                                        <i class="fas fa-bed"></i>
+                                        <span>beds</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span>2</span>
+                                    <div class="icon">
+                                        <i class="fas fa-bath"></i>
+                                        <span>baths</span>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa libero
+                                        totam nostrum consequatur autem quae provident quos alias fugit maxime nisi
+                                        labore,
+                                        temporibus tempore illo natus voluptates aliquam ipsum officia quasi placeat aut
+                                        facilis
+                                        laudantium nam!</p>
+                                    <p>Quam, iusto.Neque ratione ut deserunt unde dicta nesciunt,
+                                        repudiandae
+                                        aspernatur explicabo numquam! Tenetur!</p>
+                                </div>
+                                <div class="location">Cracow, Poland</div>
+                                <div class="price">60€ / day</div>
+                                <label for="card3" class="button-sponsor return" aria-hidden="true">
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-sponsor">
+                    <input type="checkbox" id="card1" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/gold\ \(2\).png')">
+                            <div class="inner">
+                                <h2>Gold</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <label for="card1" class="button-sponsor" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <div class="info">
+                                    <span>5</span>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                        <span>people</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span>4</span>
+                                    <div class="icon">
+                                        <i class="fas fa-door-open"></i>
+                                        <span>rooms</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span>3</span>
+                                    <div class="icon">
+                                        <i class="fas fa-bed"></i>
+                                        <span>beds</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span>1</span>
+                                    <div class="icon">
+                                        <i class="fas fa-bath"></i>
+                                        <span>bath</span>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum
+                                        nostrum ipsam
+                                        ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus
+                                        perferendis
+                                        tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
+                                </div>
+                                <div class="location">Warsaw, Poland</div>
+                                <div class="price">38€ / day</div>
+                                <label for="card1" class="button-sponsor return" aria-hidden="true">
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-sponsor">
+                    <input type="checkbox" id="card2" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/silver.jpeg')">
+                            <div class="inner">
+                                <h2>Silver</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <label for="card2" class="button-sponsor" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <div class="info">
+                                    <span>4</span>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                        <span>people</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span>3</span>
+                                    <div class="icon">
+                                        <i class="fas fa-door-open"></i>
+                                        <span>rooms</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span>2</span>
+                                    <div class="icon">
+                                        <i class="fas fa-bed"></i>
+                                        <span>beds</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span>1</span>
+                                    <div class="icon">
+                                        <i class="fas fa-bath"></i>
+                                        <span>bath</span>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem unde ea
+                                        voluptas
+                                        fuga
+                                        odio vel veniam eveniet, explicabo autem earum?</p>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet.</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                        <li>Lorem ipsum dolor sit amet.</li>
+                                    </ul>
+                                </div>
+                                <div class="location">Warsaw, Poland</div>
+                                <div class="price">42€ / day</div>
+                                <label for="card2" class="button-sponsor return" aria-hidden="true">
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-sponsor">
+                    <input type="checkbox" id="card3" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/copper.jpeg')">
+                            <div class="inner">
+                                <h2>Copper</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <label for="card3" class="button-sponsor" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <div class="info">
+                                    <span>8</span>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                        <span>people</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span>7</span>
+                                    <div class="icon">
+                                        <i class="fas fa-door-open"></i>
+                                        <span>rooms</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span>5</span>
+                                    <div class="icon">
+                                        <i class="fas fa-bed"></i>
+                                        <span>beds</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span>2</span>
+                                    <div class="icon">
+                                        <i class="fas fa-bath"></i>
+                                        <span>baths</span>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa libero
+                                        totam nostrum consequatur autem quae provident quos alias fugit maxime nisi
+                                        labore,
+                                        temporibus tempore illo natus voluptates aliquam ipsum officia quasi placeat aut
+                                        facilis
+                                        laudantium nam!</p>
+                                    <p>Quam, iusto.Neque ratione ut deserunt unde dicta nesciunt,
+                                        repudiandae
+                                        aspernatur explicabo numquam! Tenetur!</p>
+                                </div>
+                                <div class="location">Cracow, Poland</div>
+                                <div class="price">60€ / day</div>
+                                <label for="card3" class="button-sponsor return" aria-hidden="true">
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="content-wrapper">
+
+                <div class="news-card">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing First Title</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing Second Title that is Quite Long</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ullam
+                                obcaecati ex natus nulla rem sequi laborum quod fugit&hellip;</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <a href="#" class="news-card__card-link"></a>
+                    <img src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="" class="news-card__image">
+                    <div class="news-card__text-wrapper">
+                        <h2 class="news-card__title">Amazing Title</h2>
+                        <div class="news-card__post-date">Jan 29, 2018</div>
+                        <div class="news-card__details-wrapper">
+                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Officiis
+                                beatae&hellip;</p>
+                            <a href="#" class="news-card__read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+            <!-- <div class="testimonial__container swiper-container">
                 <div class="swiper-wrapper">
                     <div class="testimonial__content swiper-slide">
                         <div class="sponsor__data">
@@ -825,8 +1411,8 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-            </div>
-        </section> -->
+            </div> -->
+        </section>
 
         <!--===== Activity =====-->
         <!-- <section class="qualification section bd-container" id="qualification">
@@ -949,7 +1535,6 @@
                 </div>
             </div>
         </section> -->
-
 
 
         <!--===== SERVICES =====-->
@@ -1080,7 +1665,7 @@
                         class='bx bxl-youtube'></i></a>
             </div>
             <p class="footer__copy">Copyright &#169; 2021 FRC Team 7497. All right reserved</p>
-            <p class="footer__copy">Last Version 9.24.2021</p>
+            <p class="footer__copy">Last Version 11.06.2021</p>
         </div>
     </footer>
 

@@ -189,8 +189,8 @@
 }
 
 .slick-dots li.slick-active button {
-  background: #b38c52;
-  border-color: #b38c52;
+  /* background: #b38c52;
+  border-color: #b38c52; */
 }
 
 .slick-dots li button {
@@ -207,8 +207,8 @@
 }
 
 .slick-dots li button:hover {
-  background: #b38c52;
-  border-color: #b38c52;
+  /* background: #b38c52;
+  border-color: #b38c52; */
 }
 
 .link {

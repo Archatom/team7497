@@ -7,18 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="臺北市立成功高級中學FRC工業機器人社team7497" />
     <meta name="description" content="FRCteam7497" />
+    <meta name="description" content="team7497" />
+    <meta name="description" content="team7497 | Maraho" />
     <!-- preload -->
     <link rel="preload" as="image" href="./assets/img/FRC__newlogo.png">
     <link rel="preload" as="image" href="./assets/img/newlogohome.png">
-    <link rel="preload" as="image" href="./assets/img/copper.jpeg">
-    <link rel="preload" as="image" href="./assets/img/gold (2).png">
-    <link rel="preload" as="image" href="./assets/img/silver.jpeg">
-    <link rel="preload" as="image" href="./assets/img/tatanium (2).png">
-    <link rel="preload" as="image" href="./assets/img/about1.jpg">
-    <link rel="preload" as="image" href="./assets/img/about2.jpg">
-    <link rel="preload" as="image" href="./assets/img/about3.jpg">
-    <link rel="preload" as="image" href="./assets/img/about4.jpg">
-    <link rel="preload" as="image" href="./assets/img/about5.jpg">
+    <link rel="lazy" as="image" href="./assets/img/copper.jpeg">
+    <link rel="lazy" as="image" href="./assets/img/gold (2).png">
+    <link rel="lazy" as="image" href="./assets/img/silver.jpeg">
+    <link rel="lazy" as="image" href="./assets/img/tatanium (2).png">
+    <link rel="lazy" as="image" href="./assets/img/about1.jpg">
+    <link rel="lazy" as="image" href="./assets/img/about2.jpg">
+    <link rel="lazy" as="image" href="./assets/img/about3.jpg">
+    <link rel="lazy" as="image" href="./assets/img/about4.jpg">
+    <link rel="lazy" as="image" href="./assets/img/about5.jpg">
     <link rel="preload" as="style" href="./assets/css/swiper-bundle.min.css">
     <link rel="preload" as="style" href="./assets/css/timeline.css">
     <link rel="preload" as="style" href="./assets/css/styles.css">
@@ -96,8 +98,9 @@
         </nav> -->
         <nav>
             <div class="wrapper nav bd-container">
-                <a href="#home" class="nav__logo nav__link"><img class="logo" src="./assets/img/FRC__newlogo.png"
-                        alt=""><span style="font-size: 30px;">FRC 7497</span></a>
+                <a href="#home" class="nav__logo nav__link"><img class="logo" decoding="async"
+                        src="./assets/img/FRC__newlogo.png" alt="navlogo"><span style="font-size: 30px;">FRC
+                        7497</span></a>
                 <input type="radio" name="slider" id="menu-btn">
                 <input type="radio" name="slider" id="close-btn">
                 <ul class="nav-links">
@@ -243,7 +246,7 @@
                 </div>
 
                 <div class="home__img">
-                    <img src="./assets/img/newlogohome.png" alt="">
+                    <img decoding="async" src="./assets/img/newlogohome.png" alt="newhomelogo">
                 </div>
             </div>
         </section>
@@ -476,7 +479,9 @@
         <!--===== Team 7497 大事記 =====-->
         <section class="about section bd-container" id="history">
             <span class="section-subtitle">Our history</span>
-            <h2 class="section-title"><img class="logo" src="./assets/img/FRC__newlogo.png" alt="">Team 7497 大事記</h2>
+            <h2 class="section-title"><img class="logo" decoding="async" src="./assets/img/FRC__newlogo.png"
+                    alt="about-logo">Team 7497 大事記
+            </h2>
             <!-- 
             <div class="about__container bd-grid">
                 <div class="about__data bd-grid wow slideInLeft">
@@ -520,6 +525,7 @@
                             <div class="media-wrapper media-wrapper--overlay"
                                 style="background: url('./assets/img/about1.jpg') center center; background-size:cover;">
                             </div>
+
                         </div>
                         <div class="timeline-carousel__item-inner">
                             <span class="year">2018</span>
@@ -1161,10 +1167,10 @@
                                         <td>200mm</td>
                                     </tr>
                                 </table> -->
-                                    <!-- <model-viewer style="width: 100%; height: 400px; border-radius: 10px;" alt=""
+                                    <model-viewer style="width: 100%; height: 400px; border-radius: 10px;" alt=""
                                         src="assets\gltf\robot-processed.glb" auto-rotate seamless-poster
                                         shadow-intensity="1" camera-controls>
-                                    </model-viewer> -->
+                                    </model-viewer>
                                 </div>
                             </div>
                         </div>
@@ -1443,7 +1449,7 @@
                     </div>
                 </div>
                 <div class="card-sponsor">
-                    <input type="checkbox" id="card3" class="more">
+                    <input type="checkbox" id="card4" class="more">
                     <div class="content">
                         <div class="front" style="background-image: url('./assets/img/copper.jpeg')">
                             <div class="inner">
@@ -1453,7 +1459,7 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <label for="card3" class="button-sponsor" aria-hidden="true">
+                                <label for="card4" class="button-sponsor" aria-hidden="true">
                                     Details
                                 </label>
                             </div>
@@ -1501,7 +1507,7 @@
                                 </div>
                                 <div class="location">Cracow, Poland</div>
                                 <div class="price">60€ / day</div>
-                                <label for="card3" class="button-sponsor return" aria-hidden="true">
+                                <label for="card4" class="button-sponsor return" aria-hidden="true">
                                     <i class="fas fa-arrow-left"></i>
                                 </label>
                             </div>

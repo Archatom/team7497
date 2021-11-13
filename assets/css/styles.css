@@ -1824,7 +1824,7 @@ nav input{
   position: relative;
   display: flex;
   align-items: center;
-  color: #355cc9;
+  color: #fd626a;
   grid-row: 3;
 }
 .back .info:not(:first-of-type):before {
@@ -1843,7 +1843,7 @@ nav input{
   font-size: 1.2em;
 }
 .back .info i:before {
-  background: linear-gradient(40deg, #355cc9, #438af3);
+  background: linear-gradient(40deg, #fd626a, #fd626a);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -1865,13 +1865,13 @@ nav input{
   font-weight: 600;
   line-height: 1.4em;
   overflow: auto;
-  color: #355cc9;
+  color: var(--first-color);
   padding-right: 10px;
 }
 .back .location,
 .back .price {
   font-weight: 600;
-  color: #355cc9;
+  color: var(--first-color);
   grid-row: 1;
   font-size: 0.86em;
 }
@@ -1913,16 +1913,16 @@ nav input{
   background-color: #fff;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   text-shadow: none;
-  color: #355cc9;
+  color: #fd626a;
 }
 .button-sponsor.return {
   line-height: 3em;
-  color: #355cc9;
-  border-color: #355cc9;
+  color: #fd626a;
+  border-color: #fd626a;
   text-shadow: none;
 }
 .button-sponsor.return:hover {
-  background-color: #355cc9;
+  background-color: #fd626a;
   color: #fff;
   box-shadow: none;
 }
@@ -1936,9 +1936,9 @@ nav input{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #859ddf;
+  background: #fd626a;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #355cc9;
+  background: var(--first-color-light);
 }

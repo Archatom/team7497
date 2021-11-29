@@ -7,6 +7,7 @@ gsap.from('.home__greeting, .home__name, .home__profession, .home__button', { op
 gsap.from('.nav__logo, .nav__toggle', { opacity: 0, duration: 2, delay: 1.5, y: 25, ease: 'expo.out', stagger: .2 })
 gsap.from('.nav__item', { opacity: 0, duration: 2, delay: 1.8, y: 25, ease: 'expo.out', stagger: .2 })
 gsap.from('.home__social-icon', { opacity: 0, duration: 2, delay: 2.3, y: 25, ease: 'expo.out', stagger: .2 })
+
 /*===== SHOW MENU =====*/
 // const showMenu = (toggleId, navId) => {
 //     const toggle = document.getElementById(toggleId),
@@ -80,23 +81,38 @@ window.addEventListener('scroll', scrollTop)
 // }
 // linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))
 /*===== SWIPER CAROUSEL =====*/
-const swiper = new Swiper('.testimonial__container', {
-    spaceBetween: 16,
-    loop: true,
-    grabCursor: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
+// const swiper = new Swiper('.testimonial__container', {
+//     spaceBetween: 16,
+//     loop: true,
+//     grabCursor: true,
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+//     breakpoints: {
+//         640: {
+//             slidesPerView: 2,
+//         },
+//         1024: {
+//             slidesPerView: 3,
+//         },
+//     }
+// })
+// bots
+window.onload = function () {
+    document.querySelector('.cont_modal').className = "cont_modal";
+}
+var c = 0;
+function open_close() {
+    if (c % 2 == 0) {
+        document.querySelector('.cont_modal').className = "cont_modal cont_modal_active";
+        c++;
+    } else {
+        document.querySelector('.cont_modal').className = "cont_modal";
+        c++;
     }
-})
+}
+
 /*=============== ACCORDION ===============*/
 const accordionItems = document.querySelectorAll('.accordion__item')
 
@@ -134,4 +150,3 @@ const toggleItem = (item) => {
         item.classList.add('accordion-open')
     }
 }
-// sponsors

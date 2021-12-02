@@ -1907,7 +1907,7 @@ nav input{
  }
  
  .sectionbots ul {
-   position: absolute;
+   /* position: absolute;
    top: 0;
    left: 0;
    display: block;
@@ -1915,7 +1915,7 @@ nav input{
    z-index: 100;
    padding: 0;
    margin: 0;
-   list-style: none;
+   list-style: none; */
  }
  .sectionbots ul li {
    position: absolute;
@@ -1923,7 +1923,7 @@ nav input{
    left: 0;
    width: 100%;
    display: block;
-   z-index: 100;
+   /* z-index: 100; */
    padding: 0;
    margin: 0;
    list-style: none;
@@ -1940,18 +1940,19 @@ nav input{
    letter-spacing: 2px;
    line-height: 2.7;
    color: #343434;
-   writing-mode: vertical-rl;
+   /* writing-mode: vertical-rl; */
    opacity: 0;
    pointer-events: none;
    box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
    -webkit-transition: all 0.5s ease;
    transition: all 0.5s ease;
  }
- .sectionbots ul li span model-viewer {
-   mix-blend-mode: difference;
-   width:100%;
+ .sectionbots ul li model-viewer {
+   /* mix-blend-mode: difference; */
+   width: 500px;
    height: 100%;
-   background-color: #000;
+   background-color: rgb(59, 58, 58);
+   border-radius: 10px;
  }
  .sectionbots ul li:nth-child(2) {
    background-image: url('../img/about1.jpg');
@@ -2010,6 +2011,11 @@ nav input{
      font-size: 13px;
      letter-spacing: 1px;
    }
+   .sectionbots ul li model-viewer {
+    width:50%;
+    height: 100%;
+    background-color: #888;
+  }
  }
  
  @media (max-width: 575px) {
@@ -2019,4 +2025,9 @@ nav input{
    .sectionbots ul li {
      height: 200px;
    }
+   .sectionbots ul li model-viewer {
+    width:50%;
+    height: 100%;
+    background-color: #888;
+  }
  }

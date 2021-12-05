@@ -1,5 +1,6 @@
 // WoW.js
 new WOW().init();
+
 /*===== GSAP ANIMATION =====*/
 gsap.from('.home__img', { opacity: 0, duration: 2, delay: .5, x: 60 })
 gsap.from('.home__data', { opacity: 0, duration: 2, delay: .8, y: 25 })

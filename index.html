@@ -13,7 +13,7 @@
 
     <!-- preload -->
     <link rel="preload" as="image" href="./assets/img/FRC__newlogo.png">
-    <link rel="preload" as="image" href="./assets/img/newlogohome.png">
+    <!-- <link rel="preload" as="image" href="./assets/img/newlogohome.png"> -->
     <link rel="lazy" as="image" href="./assets/img/copper.jpeg">
     <link rel="lazy" as="image" href="./assets/img/gold (2).png">
     <link rel="lazy" as="image" href="./assets/img/silver.jpeg">
@@ -124,7 +124,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="desktop-item nav__link nav__item">Robots</a>
+                        <a href="#robots" class="desktop-item nav__link nav__item">Robots</a>
                         <input type="checkbox" id="showDrop3">
                         <label for="showDrop3" class="mobile-item">Robots</label>
                         <ul class="drop-menu">
@@ -140,8 +140,8 @@
                         <label for="showDrop1"><a target="_blank" href="https://team7497blog.vercel.app/"
                                 class="mobile-item">Blog</a></label>
                     </li>
-                    <li>
-                        <a href="./portfolio.html" class="desktop-item nav__link nav__item">Portfolio</a>
+                    <!-- <li>
+                        <a href="./members.html" class="desktop-item nav__link nav__item">Portfolio</a>
                         <input type="checkbox" id="showMega2">
                         <label for="showMega2" class="mobile-item">Portfolio</label>
                         <div class="mega-box">
@@ -178,6 +178,12 @@
                                 </div>
                             </div>
                         </div>
+                    </li> -->
+                    <li>
+                        <a target="_blank" href="/members.html" class="desktop-item nav__link nav__item">Members</a>
+                        <input type="checkbox" id="showDrop1">
+                        <label for="showDrop1"><a target="_blank" href="/members.html"
+                                class="mobile-item">Members</a></label>
                     </li>
                     <li>
                         <a href="#about" class="desktop-item nav__link nav__item">Sponsors</a>
@@ -228,7 +234,7 @@
             <span class="section-subtitle">FRC Team 7497</span>
             <h2 class="section-title">About us</h2>
 
-            <div class="tabs">
+            <div class="tabs wow zoomIn">
 
                 <input type="radio" name="tabs" id="tab1" checked>
                 <label for="tab1">
@@ -252,7 +258,7 @@
                 </div>
 
                 <div id="tab-content2" class="tab-content">
-                    <h3>What’s FRC</h3>
+                    <h3>What's FRC</h3>
                     <p>全名 FIRST Robotic
                         Competition，為全球針對青少年所辦的機器人競賽，每年有超過3000支隊伍與上萬名高中生前來共襄盛舉，於1992舉辦FRC，致今已是公認全球青少年賽事規模最大、專業的機器人競賽，也吸引許多隊伍爭相投入。
                         每年須根據不同的賽季規則，設計出一台能完成相應得分任務功能的機器人，從設計、繪圖、材料加工及組裝皆由學生親自完成，其中還包括募集資經及宣傳推廣自家隊伍。團隊人數雖不限，但通常為十人以上所組成分工合作的隊伍，透過每個人的參與，在競賽中展露鋒芒。
@@ -496,7 +502,7 @@
                 <img class="about__img wow slideInRight" src="./assets/img/background.png" alt="">
             </div> -->
             <!--Timeline carousel-->
-            <section class="timeline-carousel">
+            <section class="timeline-carousel wow fadeInLeft">
                 <!-- <h1>FRC 7497<span style="font-weight: 2000; color: black;"> 大事記</span></h1> -->
                 <div class="timeline-carou sel__item-wrapper" data-js="timeline-carousel">
                     <!--Timeline item-->
@@ -867,7 +873,7 @@
             <div class="sectionbots full-height over-hide px-4 px-sm-0">
                 <div class="container">
                     <div class="row full-height justify-content-center">
-                        <div class="col-lg-10 col-xl-8 align-self-center padding-tb">
+                        <div class="col-lg-10 col-xl-8 align-self-center padding-tb wow fadeIn">
                             <div class="sectionbots mx-auto text-center slider-height-padding">
                                 <input class="checkbox frst" type="radio" id="slide-1" name="slider" checked />
                                 <label for="slide-1">2019</label>
@@ -882,7 +888,10 @@
                                         <model-viewer alt="2020Robot" src="assets\gltf\robot-processed.glb" auto-rotate
                                             camera-controls loading="lazy">
                                         </model-viewer>
-                                        <span>簡介放這裡</span>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, earum
+                                            voluptatem. Aut, maxime nulla veritatis non provident iusto sunt accusantium
+                                            ut quisquam fuga deleniti assumenda sint odit aliquid temporibus
+                                            nemo?</span>
                                     </li>
                                     <li>
                                         <img src="./assets/img/2018white.jpg" alt="">
@@ -911,7 +920,7 @@
             <h2 class="section-title">Our Sponsors</h2>
 
             <div class="wrapper-sponsor">
-                <div class="card-sponsor">
+                <div class="card-sponsor wow zoomIn">
                     <input type="checkbox" id="card3" class="more">
                     <div class="content">
                         <div class="front" style="background-image: url('./assets/img/tatanium\ \(2\).png')">
@@ -960,14 +969,14 @@
                                     </div>
                                 </div> -->
                                 <div class="description">
-                                    <h2>贊助金額 $75,000+</h2>
-                                    <p> <i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的機器人上
+                                    <h2>贊助金額 <br> $75,000+</h2>
+                                    <p> <span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的機器人上</span>
                                         <br>
-                                        <i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的隊服上
+                                        <span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的隊服上</span>
                                         <br>
-                                        <i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於贊助牆上
+                                        <span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於贊助牆上</span>
                                         <br>
-                                        <i class='bx bxs-right-arrow'></i>包含所有Gold方案的權益
+                                        <span><i class='bx bxs-right-arrow'></i>包含所有Gold方案的權益</span>
                                         <br>
                                     </p>
                                 </div>
@@ -980,7 +989,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-sponsor">
+                <div class="card-sponsor wow zoomIn">
                     <input type="checkbox" id="card1" class="more" aria-hidden="true">
                     <div class="content">
                         <div class="front" style="background-image: url('./assets/img/gold\ \(2\).png')">
@@ -1028,12 +1037,12 @@
                                     </div>
                                 </div> -->
                                 <div class="description">
-                                    <h2>贊助金額 $50,000 - $74,999</h2>
-                                    <p> <i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的網站上
+                                    <h2>贊助金額 <br> $50,000 - $74,999</h2>
+                                    <p> <span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的網站上</span>
                                         <br>
-                                        <i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的隊服上
+                                        <span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的隊服上</span>
                                         <br>
-                                        <i class='bx bxs-right-arrow'></i>包含所有Silver方案的權益
+                                        <span><i class='bx bxs-right-arrow'></i>包含所有Silver方案的權益</span>
                                         <br>
                                     </p>
                                 </div>
@@ -1046,7 +1055,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-sponsor">
+                <div class="card-sponsor wow zoomIn">
                     <input type="checkbox" id="card2" class="more">
                     <div class="content">
                         <div class="front" style="background-image: url('./assets/img/silver.jpeg')">
@@ -1094,12 +1103,12 @@
                                     </div>
                                 </div> -->
                                 <div class="description">
-                                    <h2>贊助金額 $25,000 - $49,999</h2>
-                                    <p> <i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的機器人上
+                                    <h2>贊助金額 <br> $25,000 - $49,999</h2>
+                                    <p> <span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的機器人上</span>
                                         <br>
-                                        <i class='bx bxs-right-arrow'></i>將贊助商Logo置於贊助牆上
+                                        <span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於贊助牆上</span>
                                         <br>
-                                        <i class='bx bxs-right-arrow'></i>包含所有Copper方案的權益
+                                        <span><i class='bx bxs-right-arrow'></i>包含所有Copper方案的權益</span>
                                         <br>
                                     </p>
                                 </div>
@@ -1112,7 +1121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-sponsor">
+                <div class="card-sponsor wow zoomIn">
                     <input type="checkbox" id="card4" class="more">
                     <div class="content">
                         <div class="front" style="background-image: url('./assets/img/copper.jpeg')">
@@ -1159,12 +1168,12 @@
                                     </div>
                                 </div> -->
                                 <div class="description">
-                                    <h2>贊助金額 $5,000 - $24,999 </h2>
-                                    <p> <i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的網站上
+                                    <h2>贊助金額 <br> $5,000 - $24,999 </h2>
+                                    <p> <span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的網站上</span>
                                         <br>
-                                        <i class='bx bxs-right-arrow'></i>利用社群媒體公開宣傳
+                                        <span><i class='bx bxs-right-arrow'></i>利用社群媒體公開宣傳</span>
                                         <br>
-                                        <i class='bx bxs-right-arrow'></i>贈與感謝狀
+                                        <span><i class='bx bxs-right-arrow'></i>贈與感謝狀</span>
                                         <br>
                                     </p>
                                 </div>
@@ -1545,7 +1554,7 @@
                         class='bx bxl-youtube'></i></a>
             </div>
             <p class="footer__copy">Copyright &#169; 2021 FRC Team 7497. All right reserved</p>
-            <p class="footer__copy">Last Version 11.06.2021</p>
+            <p class="footer__copy">Last Version V2.2.8 12.24.2021</p>
         </div>
     </footer>
 

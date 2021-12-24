@@ -99,6 +99,7 @@ window.addEventListener('scroll', scrollTop)
 //         },
 //     }
 // })
+
 // bots
 window.onload = function () {
     document.querySelector('.cont_modal').className = "cont_modal";

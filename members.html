@@ -22,7 +22,7 @@
     <link rel="preload" as="script" href="./assets/js/swiper-bundle.min.js">
 
     <!-- ===== icon shortcut ===== -->
-    <link rel="icon shortcut" href="./assets/img/FRC__newlogo.png">
+    <link rel="icon shortcut" href="./assets/img/FRC__newlogo.webp">
 
     <!-- ===== navbar ===== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -86,8 +86,9 @@
         </nav> -->
         <nav>
             <div class="wrapper nav bd-container">
-                <a href="./index.html" class="nav__logo nav__link"><img class="logo" src="./assets/img/FRC__newlogo.png"
-                        alt=""><span style="font-size: 30px;">FRC 7497</span></a>
+                <a href="#home" class="nav__logo nav__link"><img class="logo" decoding="async"
+                        src="./assets/img/FRC__newlogo.webp" alt="navlogo"><span style="font-size: 30px;">FRC
+                        7497</span></a>
                 <input type="radio" name="slider" id="menu-btn">
                 <input type="radio" name="slider" id="close-btn">
                 <ul class="nav-links">
@@ -98,74 +99,35 @@
                         <label for="showDrop1"><a href="./index.html" class="mobile-item">Home</a></label>
                     </li>
                     <li>
-                        <a href="./index.html" class="desktop-item nav__link nav__item">About</a>
+                        <a href="#about" class="desktop-item nav__link nav__item">About</a>
                         <input type="checkbox" id="showDrop2">
                         <label for="showDrop2" class="mobile-item">About</label>
                         <ul class="drop-menu">
                             <li><a href="./index.html">FRC Team 7497</a></li>
-                            <!-- <li><a href="./index.html">What's FRC</a></li> -->
+                            <!-- <li><a href="#about">What's FRC</a></li> -->
                             <li><a href="./about.html">Team 7497 History</a></li>
-                            <!-- <li><a href="./index.html">Q&A</a></li> -->
+                            <!-- <li><a href="#about">Q&A</a></li> -->
                         </ul>
                     </li>
                     <li>
-                        <a href="./index.html" class="desktop-item nav__link nav__item">Robots</a>
+                        <a href="#robots" class="desktop-item nav__link nav__item">Robots</a>
                         <input type="checkbox" id="showDrop3">
                         <label for="showDrop3" class="mobile-item">Robots</label>
                         <ul class="drop-menu">
-                            <li><a href="./index.html">2019</a></li>
-                            <li><a href="./index.html">2020</a></li>
-                            <li><a href="./index.html">2020</a></li>
+                            <li><a href="#robots">2019</a></li>
+                            <li><a href="#robots">2020</a></li>
+                            <li><a href="#robots">2021</a></li>
                         </ul>
                     </li>
-                    <!-- <li>
-                        <a href="#" class="desktop-item nav__link nav__item">Group</a>
-                        <input type="checkbox" id="showMega1">
-                        <label for="showMega1" class="mobile-item">Group</label>
-                        <div class="mega-box">
-                            <div class="content">
-                                <div class="row">
-                                    <img src="./assets/img/newlogohome.png" alt="">
-                                </div>
-                                <div class="row">
-                                    <header>Robot Design</header>
-                                    <ul class="mega-links">
-                                        <li><a href="#">Graphics</a></li>
-                                        <li><a href="#">Vectors</a></li>
-                                        <li><a href="#">Business cards</a></li>
-                                        <li><a href="#">Custom logo</a></li>
-                                    </ul>
-                                </div>
-                                <div class="row">
-                                    <header>Mechanics</header>
-                                    <ul class="mega-links">
-                                        <li><a href="#">Personal Email</a></li>
-                                        <li><a href="#">Business Email</a></li>
-                                        <li><a href="#">Mobile Email</a></li>
-                                        <li><a href="#">Web Marketing</a></li>
-                                    </ul>
-                                </div>
-                                <div class="row">
-                                    <header>Programming</header>
-                                    <ul class="mega-links">
-                                        <li><a href="#">Site Seal</a></li>
-                                        <li><a href="#">VPS Hosting</a></li>
-                                        <li><a href="#">Privacy Seal</a></li>
-                                        <li><a href="#">Website design</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li> -->
                     <li>
-                        <a target="_blank" href="https://team7497blog.vercel.app/"
+                        <a rel="noopener noreferrer" target="_blank" href="https://team7497blog.vercel.app/"
                             class="desktop-item nav__link nav__item">Blog</a>
                         <input type="checkbox" id="showDrop1">
-                        <label for="showDrop1"><a target="_blank" href="https://team7497blog.vercel.app/"
-                                class="mobile-item">Blog</a></label>
+                        <label for="showDrop1"><a rel="noopener noreferrer" target="_blank"
+                                href="https://team7497blog.vercel.app/" class="mobile-item">Blog</a></label>
                     </li>
                     <!-- <li>
-                        <a href="#" class="desktop-item nav__link nav__item">Portfolio</a>
+                        <a href="./members.html" class="desktop-item nav__link nav__item">Portfolio</a>
                         <input type="checkbox" id="showMega2">
                         <label for="showMega2" class="mobile-item">Portfolio</label>
                         <div class="mega-box">
@@ -204,22 +166,24 @@
                         </div>
                     </li> -->
                     <li>
-                        <a target="_blank" href="#" class="desktop-item nav__link nav__item">Members</a>
+                        <a target="_blank" href="./members.html" class="desktop-item nav__link nav__item">Members</a>
                         <input type="checkbox" id="showDrop1">
-                        <label for="showDrop1"><a target="_blank" href="#" class="mobile-item">Members</a></label>
+                        <label for="showDrop1"><a target="_blank" href="./members.html"
+                                class="mobile-item">Members</a></label>
                     </li>
                     <li>
-                        <a href="/index.html" class="desktop-item nav__link nav__item">Sponsors</a>
+                        <a href="./index.html" class="desktop-item nav__link nav__item">Sponsors</a>
                         <input type="checkbox" id="showDrop4">
                         <label for="showDrop4" class="mobile-item">Sponsors</label>
                         <ul class="drop-menu">
-                            <li><a href="/index.html">Our Sponsors</a></li>
-                            <li><a href="/index.html">Sponsor Us</a></li>
-                            <li><a href="/index.html">2020</a></li>
+                            <li><a href="./index.html">Our Sponsors</a></li>
+                            <li><a rel="noopener noreferrer" target="_blank"
+                                    href="https://www.flyingv.cc/projects/30246?fbclid=IwAR176gK_coGZSwfklGGWXmEC87B5EvAVdYYO41pBAoCiyTt1i-C3164i-u8">Sponsor
+                                    Us</a></li>
                         </ul>
                     </li>
                 </ul>
-                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars nav__link"></i></label>
+                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars nav__link wow fadeInRight"></i></label>
             </div>
         </nav>
     </header>

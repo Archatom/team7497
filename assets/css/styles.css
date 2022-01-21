@@ -1496,6 +1496,9 @@ nav input{
   box-sizing: border-box;
   background-color:#ffffff;
 }
+.tab-content p{
+  font-size: large;
+}
 .tab-content * {
   -webkit-animation: scale 0.7s ease-in-out;
   -moz-animation: scale 0.7s ease-in-out;
@@ -1794,8 +1797,8 @@ nav input{
 }
 .slider {
   background-color: var(--first-color-lighten);
-  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
-  /* height: 100px; */
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -1831,27 +1834,7 @@ nav input{
 
 
 
-
-
 /* bots */
- /* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
-
- body{
-   font-family: 'Poppins', sans-serif;
-   font-weight: 300;
-   font-size: 15px;
-   line-height: 1.7;
-   color: #343434;
-   background-color: #f1f2f6;
-   overflow-x: hidden;
- }
- a {
-   cursor: pointer;
- }
- a:hover {
-   text-decoration: none;
- } */
- 
  .sectionbots{
    position: relative;
    width: 100%;

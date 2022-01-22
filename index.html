@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
     <link rel="lazy" href="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
     <link rel="preload" as="script" href="./assets/js/main.js">
-    <link rel="preload" as="script" href="./assets/js/gsap.min.js">
+    <link rel="lazy" as="script" href="./assets/js/gsap.min.js">
     <link rel="icon shortcut" href="./assets/img/FRC__newlogo.webp">
     <link rel="apple-touch-icon" href="./assets/img/FRC__newlogo.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -32,6 +32,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Team 7497 | MARAHO</title>
+    <script>
+        /* passive: <boolean>, once: <boolean>, capture: <boolean> */
+        document.addEventListener('DOMContentLoaded', () => {
+            //add listeners  - useCapture
+            document
+                .querySelector('main p')
+                .addEventListener('click', f1, { capture: false, once: true });
+
+            document.body.addEventListener('touchstart', f2, {
+                capture: false,
+                passive: false,
+            });
+
+            document
+                .querySelector('model-viewer')
+                .addEventListener('touchstart', f3, {
+                    capture: false,
+                    passive: false,
+                });
+        });
+
+        function f1(ev) {
+            let num = Math.random().toString(16).substr(2, 6);
+            console.log(num);
+            ev.target.style.backgroundColor = `#${num}`;
+        }
+
+        function f2(ev) {
+            ev.preventDefault();
+            console.log('touchstart on body');
+        }
+
+        function f3(ev) {
+            ev.preventDefault();
+            console.log('touchstart on p 2');
+        }
+    </script>
 </head>
 
 <body> <a href="#" class="scrolltop" id="scroll-top"> <i class='bx bx-chevron-up scrolltop__icon'></i> </a>
@@ -62,7 +99,8 @@
                     <li> <a rel="noopener noreferrer" target="_blank" href="https://team7497blog.vercel.app/"
                             class="desktop-item nav__link nav__item">Blog</a> <input type="checkbox" id="showDrop1">
                         <label for="showDrop1"><a rel="noopener noreferrer" target="_blank"
-                                href="https://team7497blog.vercel.app/" class="mobile-item">Blog</a></label> </li>
+                                href="https://team7497blog.vercel.app/" class="mobile-item">Blog</a></label>
+                    </li>
                     <!-- <li> <a href="./members.html" class="desktop-item nav__link nav__item">Portfolio</a> <input type="checkbox" id="showMega2"> <label for="showMega2" class="mobile-item">Portfolio</label> <div class="mega-box"> <div class="content"> <div class="row"> <img src="./assets/img/newlogohome.png" alt=""> </div><div class="row"> <header>Outreach</header> <ul class="mega-links"> <li><a href="#">Graphics</a></li><li><a href="#">Vectors</a></li><li><a href="#">Business cards</a></li><li><a href="#">Custom logo</a></li></ul> </div><div class="row"> <header>Photos</header> <ul class="mega-links"> <li><a href="#">Personal Email</a></li><li><a href="#">Business Email</a></li><li><a href="#">Mobile Email</a></li><li><a href="#">Web Marketing</a></li></ul> </div><div class="row"> <header>Vedios</header> <ul class="mega-links"> <li><a href="#">Site Seal</a></li><li><a href="#">VPS Hosting</a></li><li><a href="#">Privacy Seal</a></li><li><a href="#">Website design</a></li></ul> </div></div></div></li>-->
                     <!-- <li> <a target="_blank" href="/members.html" class="desktop-item nav__link nav__item">Members</a> <input type="checkbox" id="showDrop1"> <label for="showDrop1"><a target="_blank" href="members.html" class="mobile-item">Members</a></label> </li>-->
                     <li> <a href="#sponsors" class="desktop-item nav__link nav__item">Sponsors</a> <input
@@ -114,7 +152,8 @@
                 <div id="tab-content1" class="tab-content">
                     <h2>FRC Team 7497</h2>
                     <p> 我們隊伍自2019年創立，在2020年正式註冊 MARAHO#7497。 <br>MARAHO是台灣的國蝶 -寬尾鳳蝶，在泰雅族語中有 「酋長」一意。
-                        <br>象徵著我們隊伍拍動這小小翅膀，如同蝴蝶效應，在台灣推廣FRC。 <br>當我們專注在機器人競賽時也不忘回饋社會，每年皆會協助地方捐血活動、偏鄉推廣STEM教育。 </p>
+                        <br>象徵著我們隊伍拍動這小小翅膀，如同蝴蝶效應，在台灣推廣FRC。 <br>當我們專注在機器人競賽時也不忘回饋社會，每年皆會協助地方捐血活動、偏鄉推廣STEM教育。
+                    </p>
                 </div>
                 <div id="tab-content2" class="tab-content">
                     <h2>什麼是FRC?</h2>
@@ -226,7 +265,8 @@
                                     <p> <span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的機器人上</span>
                                         <br><span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的隊服上</span>
                                         <br><span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於贊助牆上</span>
-                                        <br><span><i class='bx bxs-right-arrow'></i>包含所有Gold方案的權益</span> <br></p>
+                                        <br><span><i class='bx bxs-right-arrow'></i>包含所有Gold方案的權益</span> <br>
+                                    </p>
                                 </div><label for="card3" class="button-sponsor return" aria-hidden="true"> <i
                                         class="fas fa-arrow-left"></i> </label>
                             </div>
@@ -249,7 +289,8 @@
                                     <h2>贊助金額 <br>$50,000 - $74,999</h2>
                                     <p> <span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的網站上</span>
                                         <br><span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的隊服上</span> <br><span><i
-                                                class='bx bxs-right-arrow'></i>包含所有Silver方案的權益</span> <br></p>
+                                                class='bx bxs-right-arrow'></i>包含所有Silver方案的權益</span> <br>
+                                    </p>
                                 </div><label for="card1" class="button-sponsor return" aria-hidden="true"> <i
                                         class="fas fa-arrow-left"></i> </label>
                             </div>

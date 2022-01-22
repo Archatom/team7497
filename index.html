@@ -20,15 +20,11 @@
     <link rel="lazy" as="image" href="./assets/img/gold (2).webp">
     <link rel="lazy" as="image" href="./assets/img/silver.webp">
     <link rel="lazy" as="image" href="./assets/img/tatanium (2).webp">
-    <link rel="preload" as="style" href="./assets/css/swiper-bundle.min.css">
-    <link rel="preload" as="style" href="./assets/css/timeline.css">
     <link rel="preload" as="style" href="./assets/css/styles.css">
     <link rel="preconnect" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
     <link rel="preconnect" href="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
     <link rel="preload" as="script" href="./assets/js/main.js">
     <link rel="preload" as="script" href="./assets/js/gsap.min.js">
-    <link rel="preload" as="script" href="./assets/js/mixitup.min.js">
-    <link rel="preload" as="script" href="./assets/js/swiper-bundle.min.js">
 
     <!-- ===== icon shortcut ===== -->
     <link rel="icon shortcut" href="./assets/img/FRC__newlogo.webp">
@@ -36,9 +32,6 @@
 
     <!-- ===== navbar ===== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-    <!-- ===== SWIPER CSS ===== -->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
     <!-- ===== BOX ICONS ===== -->
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
@@ -52,13 +45,6 @@
 
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-
-    <!-- timeline css -->
-    <link rel="stylesheet" href="./assets/css/timeline.css">
-
-    <!-- slick css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -75,26 +61,6 @@
 
     <!--===== HEADER =====-->
     <header class="l-header" id="header">
-        <!-- <nav class="nav bd-container">
-            <a href="#home" class="nav__logo"><img class="logo" src="./assets/img/FRC__newlogo.png" alt=""><span
-                    style="font-size: 30px;">FRC 7497</span></a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#portfolio" class="nav__link">portfolio</a></li>
-                    <li class="nav__item"><a href="#sponsors" class="nav__link">Sponsors</a></li>
-                    <li class="nav__item"><a href="#qualification" class="nav__link">Activity</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Study</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav> -->
         <nav>
             <div class="wrapper nav bd-container">
                 <a href="#home" class="nav__logo nav__link"><img class="logo" decoding="async"
@@ -121,13 +87,12 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#robots" class="desktop-item nav__link nav__item">Robots</a>
+                        <a href="./robot.html" class="desktop-item nav__link nav__item">Robots</a>
                         <input type="checkbox" id="showDrop3">
                         <label for="showDrop3" class="mobile-item">Robots</label>
                         <ul class="drop-menu">
-                            <li><a href="#robots">2019</a></li>
-                            <li><a href="#robots">2020</a></li>
-                            <li><a href="#robots">2021</a></li>
+                            <li><a href="#robots">All New Robot</a></li>
+                            <li><a href="./robot.html">Other Years</a></li>
                         </ul>
                     </li>
                     <li>
@@ -222,17 +187,6 @@
                     <a rel="noopener noreferrer" target="_blank"
                         href="https://www.youtube.com/channel/UCfwhmJXKZv5R4YJ29Xoxz4w" class="home__social-icon"><i
                             class='bx bxl-youtube'></i></a>
-                    <!--modals-->
-                    <a href="#openModal-about" class="button button-light home__social-icon">Modal</a>
-                    <div id="openModal-about" class="modalDialog">
-                        <div>
-                            <a href="#close" title="Close" class="close">X</a>
-                            <h2>Modal</h2>
-                            <model-viewer style="width: 100%; height: 50vh;" alt="2021Robot"
-                                src="assets\gltf\robot-processed.glb" auto-rotate camera-controls loading="lazy">
-                            </model-viewer>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="home__img">
@@ -341,7 +295,7 @@
                 </div>
 
                 <div id="tab-content3" class="tab-content">
-                    <div class="about__data bd-grid">
+                    <div class="bd-grid">
                         <div class="accordion__item">
                             <header class="accordion__header">
                                 <i class='bx bx-plus accordion__icon'></i>
@@ -389,7 +343,7 @@
 
                             <div class="accordion__content">
                                 <p class="accordion__description">
-                                    除了每年官方正式的比賽，我們在其他時段會參加台灣所舉辦的模擬賽，增進經驗及 實力
+                                    除了每年官方正式的比賽，我們在其他時段會參加台灣所舉辦的模擬賽，增進經驗及實力
                                 </p>
                             </div>
                         </div>
@@ -414,53 +368,63 @@
         </section>
 
         <!--===== Our Bots =====-->
-        <section class="testimonial qualification section bd-container" id="robots">
-            <span class="section-subtitle">The Robots</span>
-            <h2 class="section-title">Our Robots</h2>
+        <section class="testimonial section bd-container" id="robots">
+            <span class="section-subtitle">The New</span>
+            <h2 class="section-title">New Robot
+                <!--modals-->
+                <a class="buttonbots" href="#openModal-about">3D model</a>
 
-            <div class="sectionbots full-height over-hide px-4 px-sm-0">
+                <div id="openModal-about" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h2>All New 2021 Unicorn</h2>
+                        <model-viewer style="width: 100%; height: 50vh;" alt="2021Robot"
+                            src="assets\gltf\robot-processed.glb" auto-rotate camera-controls loading="lazy">
+                        </model-viewer>
+                    </div>
+                </div>
+            </h2>
+
+            <div class="sectionbots full-height px-4 px-sm-0">
+
                 <div class="container">
                     <div class="row full-height justify-content-center">
-                        <div class="col-lg-10 col-xl-8 align-self-center padding-tb wow fadeIn">
+                        <div class="col-lg-10 col-xl-8">
                             <div class="sectionbots mx-auto text-center slider-height-padding">
                                 <input class="checkbox frst" type="radio" id="slide-1" name="slider" checked />
-                                <label for="slide-1">2021</label>
-                                <input class="checkbox scnd" type="radio" name="slider" id="slider-2" />
-                                <label for="slider-2">2019</label>
-                                <input class="checkbox thrd" type="radio" name="slider" id="slider-3" />
-                                <label for="slider-3">2020</label>
+
+                                <!-- <input class="checkbox scnd" type="radio" name="slider" id="slider-2" />
+                                <label for="slider-2">2020</label> -->
+                                <!-- <input class="checkbox thrd" type="radio" name="slider" id="slider-3" />
+                                <label for="slider-3">2021</label> -->
                                 <!-- <input class="checkbox foth" type="radio" name="slider" id="slider-4" />
                                 <label for="slider-4"></label> -->
                                 <ul>
                                     <li>
-                                        <!-- <model-viewer alt="2021Robot" src="assets\gltf\robot-processed.glb" auto-rotate
-                                            camera-controls loading="lazy">
-                                        </model-viewer> -->
+                                        <img src="./assets/img/2018white.webp" alt="">
                                         <span><img src="./assets/img/bot2021.png" alt=""></span>
                                     </li>
-                                    <li>
-                                        <img src="./assets/img/2018white.webp" alt="">
-                                        <span><img src="./assets/img/bot2019.png" alt=""></span>
-                                    </li>
-                                    <li>
+                                    <!-- <li>
                                         <img src="./assets/img/2019white.webp" alt="">
                                         <span><img src="./assets/img/bot2020.png" alt=""></span>
-                                    </li>
-                                    <!-- <li>
-                                        <span>SKATEBOARD FACE</span>
                                     </li> -->
+                                    <!-- <li>
+                                        <img src="./assets/img/2019white.webp" alt="">
+                                        <span><img src="./assets/img/bot2020.png" alt=""></span>
+                                    </li> -->
+                                    <!-- <li>
+                                <span>SKATEBOARD FACE</span>
+                            </li> -->
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </section>
 
         <!--===== Sponsors =====-->
-        <section class="testimonial qualification section bd-container" id="sponsors">
+        <section class="testimonial section bd-container" id="sponsors">
             <span class="section-subtitle">Testimonial</span>
             <h2 class="section-title">Our Sponsors</h2>
 
@@ -485,34 +449,6 @@
                         </div>
                         <div class="back">
                             <div class="inner">
-                                <!-- <div class="info">
-                                    <span>8</span>
-                                    <div class="icon">
-                                        <i class="fas fa-users"></i>
-                                        <span>people</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <span>7</span>
-                                    <div class="icon">
-                                        <i class="fas fa-door-open"></i>
-                                        <span>rooms</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <span>5</span>
-                                    <div class="icon">
-                                        <i class="fas fa-bed"></i>
-                                        <span>beds</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <span>2</span>
-                                    <div class="icon">
-                                        <i class="fas fa-bath"></i>
-                                        <span>baths</span>
-                                    </div>
-                                </div> -->
                                 <div class="description">
                                     <h2>贊助金額 <br> $75,000+</h2>
                                     <p> <span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的機器人上</span>
@@ -525,8 +461,6 @@
                                         <br>
                                     </p>
                                 </div>
-                                <!-- <div class="location">Cracow, Poland</div>
-                                <div class="price">60€ / day</div> -->
                                 <label for="card3" class="button-sponsor return" aria-hidden="true">
                                     <i class="fas fa-arrow-left"></i>
                                 </label>
@@ -553,34 +487,6 @@
                         </div>
                         <div class="back">
                             <div class="inner">
-                                <!-- <div class="info">
-                                    <span>5</span>
-                                    <div class="icon">
-                                        <i class="fas fa-users"></i>
-                                        <span>people</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <span>4</span>
-                                    <div class="icon">
-                                        <i class="fas fa-door-open"></i>
-                                        <span>rooms</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <span>3</span>
-                                    <div class="icon">
-                                        <i class="fas fa-bed"></i>
-                                        <span>beds</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <span>1</span>
-                                    <div class="icon">
-                                        <i class="fas fa-bath"></i>
-                                        <span>bath</span>
-                                    </div>
-                                </div> -->
                                 <div class="description">
                                     <h2>贊助金額 <br> $50,000 - $74,999</h2>
                                     <p> <span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的網站上</span>
@@ -591,8 +497,6 @@
                                         <br>
                                     </p>
                                 </div>
-                                <!-- <div class="location">Warsaw, Poland</div>
-                                <div class="price">38€ / day</div> -->
                                 <label for="card1" class="button-sponsor return" aria-hidden="true">
                                     <i class="fas fa-arrow-left"></i>
                                 </label>
@@ -619,34 +523,6 @@
                         </div>
                         <div class="back">
                             <div class="inner">
-                                <!-- <div class="info">
-                                    <span>4</span>
-                                    <div class="icon">
-                                        <i class="fas fa-users"></i>
-                                        <span>people</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <span>3</span>
-                                    <div class="icon">
-                                        <i class="fas fa-door-open"></i>
-                                        <span>rooms</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <span>2</span>
-                                    <div class="icon">
-                                        <i class="fas fa-bed"></i>
-                                        <span>beds</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <span>1</span>
-                                    <div class="icon">
-                                        <i class="fas fa-bath"></i>
-                                        <span>bath</span>
-                                    </div>
-                                </div> -->
                                 <div class="description">
                                     <h2>贊助金額 <br> $25,000 - $49,999</h2>
                                     <p> <span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的機器人上</span>
@@ -657,8 +533,6 @@
                                         <br>
                                     </p>
                                 </div>
-                                <!-- <div class="location">Warsaw, Poland</div>
-                                <div class="price">42€ / day</div> -->
                                 <label for="card2" class="button-sponsor return" aria-hidden="true">
                                     <i class="fas fa-arrow-left"></i>
                                 </label>
@@ -684,34 +558,6 @@
                         </div>
                         <div class="back">
                             <div class="inner">
-                                <!-- <div class="info">
-                                    <span>8</span>
-                                    <div class="icon">
-                                        <i class="fas fa-users"></i>
-                                        <span>people</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <span>7</span>
-                                    <div class="icon">
-                                        <i class="fas fa-door-open"></i>
-                                        <span>rooms</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <span>5</span>
-                                    <div class="icon">
-                                        <i class="fas fa-bed"></i>
-                                        <span>beds</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <span>2</span>
-                                    <div class="icon">
-                                        <i class="fas fa-bath"></i>
-                                        <span>baths</span>
-                                    </div>
-                                </div> -->
                                 <div class="description">
                                     <h2>贊助金額 <br> $5,000 - $24,999 </h2>
                                     <p> <span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的網站上</span>
@@ -732,62 +578,10 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="content-wrapper">
-
-                <div class="news-card">
-                    <a href="#" class="news-card__card-link"></a>
-                    <img src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-                        alt="" class="news-card__image">
-                    <div class="news-card__text-wrapper">
-                        <h2 class="news-card__title">Amazing First Title</h2>
-                        <div class="news-card__post-date">Jan 29, 2018</div>
-                        <div class="news-card__details-wrapper">
-
-                            <a href="#" class="news-card__read-more">Read more <i
-                                    class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <a href="#" class="news-card__card-link"></a>
-                    <img src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-                        alt="" class="news-card__image">
-                    <div class="news-card__text-wrapper">
-                        <h2 class="news-card__title">Amazing Second Title that is Quite Long</h2>
-                        <div class="news-card__post-date">Jan 29, 2018</div>
-                        <div class="news-card__details-wrapper">
-                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Ullam
-                                obcaecati ex natus nulla rem sequi laborum quod fugit&hellip;</p>
-                            <a href="#" class="news-card__read-more">Read more <i
-                                    class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <a href="#" class="news-card__card-link"></a>
-                    <img src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="" class="news-card__image">
-                    <div class="news-card__text-wrapper">
-                        <h2 class="news-card__title">Amazing Title</h2>
-                        <div class="news-card__post-date">Jan 29, 2018</div>
-                        <div class="news-card__details-wrapper">
-                            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Officiis
-                                beatae&hellip;</p>
-                            <a href="#" class="news-card__read-more">Read more <i
-                                    class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div> -->
         </section>
 
         <!--===== CONTACTME =====-->
-        <!-- <section class="contact qualification section bd-container" id="contact">
+        <!-- <section class="contact section bd-container" id="contact">
             <span class="section-subtitle">For projects</span>
             <h2 class="section-title">Contact us</h2>
 
@@ -841,25 +635,25 @@
                     <input type="submit" value="Send Message" class="button contact__button">
                 </form>
             </div>
-
-            <section class="project section bd-container">
-                <div class="project__container br-grid">
-                    <div class="projecct__data">
-                        <div>
-
-                            <h2 class="project__title">
-                                <i class='bx bx-map' style="font-size: 30px; color: #ffd700;"></i> Our Location
-                            </h2>
-                            <p class="project__description">Hire me to carry out the</p>
-                        </div>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7565795710684!2d121.521366615361!3d25.042333644110492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a970c3bcebf3%3A0x266ad3e2f94333b2!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A5r-f5Y2X6Lev5LiA5q61NzHomZ8!5e0!3m2!1szh-TW!2stw!4v1632076080251!5m2!1szh-TW!2stw"
-                            class="project__video" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </section>
         </section> -->
 
+        <!-- map -->
+        <section class="map section bd-container">
+            <div class="map__container br-grid">
+                <div class="map__data">
+                    <div>
+
+                        <h2 class="map__title">
+                            <i class='bx bx-map' style="font-size: 30px; color: #ffd700;"></i> Our Location
+                        </h2>
+                        <!-- <p class="map__description">Hire me to carry out the</p> -->
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7565795710684!2d121.521366615361!3d25.042333644110492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a970c3bcebf3%3A0x266ad3e2f94333b2!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A5r-f5Y2X6Lev5LiA5q61NzHomZ8!5e0!3m2!1szh-TW!2stw!4v1632076080251!5m2!1szh-TW!2stw"
+                        class="map__video" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -884,12 +678,6 @@
     <!-- ===== MODEL-VIEWER ===== -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-    <!-- ===== MIXITUP FILTER ===== -->
-    <script src="./assets/js/mixitup.min.js"></script>
-
-    <!-- ===== SWIPER JS ===== -->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-
     <!-- ===== GSAP ===== -->
     <script src="./assets/js/gsap.min.js"></script>
 
@@ -899,10 +687,6 @@
     <!-- ===== jquery ===== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         referrerpolicy="no-referrer"></script>
-
-    <!-- slick js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-    <script src="./assets/js/timeline.js"></script>
 
     <!--===== MAIN JS =====-->
     <script src="./assets/js/main.js"></script>

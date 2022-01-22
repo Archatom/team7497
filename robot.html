@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="臺北市立成功高級中學FRC工業機器人社team7497" />
+    <meta name="description" content="FRCteam7497" />
+    <meta name="robots" content="noindex,nofollow">
+    <!-- preload -->
+    <link rel="preload" as="image" href="./assets/img/FRC__newlogo.png">
+    <link rel="preload" as="style" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="preconnect" href="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    <link rel="preload" as="script" href="./assets/js/main.js">
+    <link rel="preload" as="script" href="./assets/js/gsap.min.js">
+
+    <!-- ===== icon shortcut ===== -->
+    <link rel="icon shortcut" href="./assets/img/FRC__newlogo.webp">
+
+    <!-- ===== navbar ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- ===== BOX ICONS ===== -->
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css?_cacheOverride=1636013040059">
+
+    <!-- Animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css">
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>Team 7497 | MARAHO</title>
+
+</head>
+
+<body>
+    <!--===== SCROLL TOP =====-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+        <nav>
+            <div class="wrapper nav bd-container">
+                <a href="#home" class="nav__logo nav__link"><img class="logo" decoding="async"
+                        src="./assets/img/FRC__newlogo.webp" alt="navlogo"><span style="font-size: 30px;">FRC
+                        7497</span></a>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li>
+                        <a href="./index.html" class="desktop-item nav__link nav__item">Home</a>
+                        <input type="checkbox" id="showDrop1">
+                        <label for="showDrop1"><a href="./index.html" class="mobile-item">Home</a></label>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="desktop-item nav__link nav__item">About</a>
+                        <input type="checkbox" id="showDrop2">
+                        <label for="showDrop2" class="mobile-item">About</label>
+                        <ul class="drop-menu">
+                            <li><a href="./index.html">FRC Team 7497</a></li>
+                            <!-- <li><a href="#about">What's FRC</a></li> -->
+                            <li><a href="./about.html">Team 7497 History</a></li>
+                            <!-- <li><a href="#about">Q&A</a></li> -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./robot.html" class="desktop-item nav__link nav__item">Robots</a>
+                        <input type="checkbox" id="showDrop3">
+                        <label for="showDrop3" class="mobile-item">Robots</label>
+                        <ul class="drop-menu">
+                            <li><a href="#robots">All New Robot</a></li>
+                            <li><a href="./robot.html">Other Years</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a rel="noopener noreferrer" target="_blank" href="https://team7497blog.vercel.app/"
+                            class="desktop-item nav__link nav__item">Blog</a>
+                        <input type="checkbox" id="showDrop1">
+                        <label for="showDrop1"><a rel="noopener noreferrer" target="_blank"
+                                href="https://team7497blog.vercel.app/" class="mobile-item">Blog</a></label>
+                    </li>
+                    <!-- <li>
+                        <a href="./members.html" class="desktop-item nav__link nav__item">Portfolio</a>
+                        <input type="checkbox" id="showMega2">
+                        <label for="showMega2" class="mobile-item">Portfolio</label>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row">
+                                    <img src="./assets/img/newlogohome.png" alt="">
+                                </div>
+                                <div class="row">
+                                    <header>Outreach</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Graphics</a></li>
+                                        <li><a href="#">Vectors</a></li>
+                                        <li><a href="#">Business cards</a></li>
+                                        <li><a href="#">Custom logo</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Photos</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Personal Email</a></li>
+                                        <li><a href="#">Business Email</a></li>
+                                        <li><a href="#">Mobile Email</a></li>
+                                        <li><a href="#">Web Marketing</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Vedios</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Site Seal</a></li>
+                                        <li><a href="#">VPS Hosting</a></li>
+                                        <li><a href="#">Privacy Seal</a></li>
+                                        <li><a href="#">Website design</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+                    <!-- <li>
+                        <a target="_blank" href="./members.html" class="desktop-item nav__link nav__item">Members</a>
+                        <input type="checkbox" id="showDrop1">
+                        <label for="showDrop1"><a target="_blank" href="./members.html"
+                                class="mobile-item">Members</a></label>
+                    </li> -->
+                    <li>
+                        <a href="./index.html" class="desktop-item nav__link nav__item">Sponsors</a>
+                        <input type="checkbox" id="showDrop4">
+                        <label for="showDrop4" class="mobile-item">Sponsors</label>
+                        <ul class="drop-menu">
+                            <li><a href="./index.html">Our Sponsors</a></li>
+                            <li><a rel="noopener noreferrer" target="_blank"
+                                    href="https://www.flyingv.cc/projects/30246?fbclid=IwAR176gK_coGZSwfklGGWXmEC87B5EvAVdYYO41pBAoCiyTt1i-C3164i-u8">Sponsor
+                                    Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars nav__link wow fadeInRight"></i></label>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+
+        <!--===== Our Bots =====-->
+        <section class="testimonial qualification section bd-container" id="robots">
+            <span class="section-subtitle">The Robots</span>
+            <h2 class="section-title">Our Robots</h2>
+
+            <div class="sectionbots full-height over-hide px-4 px-sm-0">
+                <div class="container">
+                    <div class="row full-height justify-content-center">
+                        <div class="col-lg-10 col-xl-8 align-self-center padding-tb wow fadeIn">
+                            <div class="sectionbots mx-auto text-center slider-height-padding">
+                                <input class="checkbox frst" type="radio" id="slide-1" name="slider" checked />
+                                <label for="slide-1">2019</label>
+                                <input class="checkbox scnd" type="radio" name="slider" id="slider-2" />
+                                <label for="slider-2">2020</label>
+                                <!-- <input class="checkbox thrd" type="radio" name="slider" id="slider-3" />
+                                <label for="slider-3">2021</label> -->
+                                <!-- <input class="checkbox foth" type="radio" name="slider" id="slider-4" />
+                        <label for="slider-4"></label> -->
+                                <ul>
+                                    <li>
+                                        <img src="./assets/img/2018white.webp" alt="">
+                                        <span><img src="./assets/img/bot2019.png" alt=""></span>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/img/2019white.webp" alt="">
+                                        <span><img src="./assets/img/bot2020.png" alt=""></span>
+                                    </li>
+                                    <!-- <li>
+                                        <img src="./assets/img/2019white.webp" alt="">
+                                        <span><img src="./assets/img/bot2020.png" alt=""></span>
+                                    </li> -->
+                                    <!-- <li>
+                                <span>SKATEBOARD FACE</span>
+                            </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="footer__container bd-container">
+            <h1 class="footer__title">臺北市立成功高級中學 <br> FRC Team 7497</h1>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/FRC7497" class="footer__link"><i
+                        class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.instagram.com/team_7497/" class="footer__link"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.youtube.com/channel/UCfwhmJXKZv5R4YJ29Xoxz4w" class="footer__link"><i
+                        class='bx bxl-youtube'></i></a>
+            </div>
+            <p class="footer__copy">Copyright &#169; 2021 FRC Team 7497. All right reserved</p>
+            <p class="footer__copy">Last Version 9.24.2021</p>
+        </div>
+    </footer>
+
+
+    <!-- ===== GSAP ===== -->
+    <script src="./assets/js/gsap.min.js"></script>
+
+    <!-- ===== WOW JS ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- ===== jquery ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

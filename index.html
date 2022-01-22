@@ -2,16 +2,13 @@
 <html lang="en">
 
 <head>
-    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FRC Team 7497 team 7497 blog
-    我們隊伍自2019年創立，在2020年正式註冊 MARAHO#7497。 MARAHO是台灣的國蝶 -寬尾鳳蝶，在泰雅族語中有 「酋長」一意。 象徵著我們隊伍拍動這小小翅膀，如同蝴蝶效應，在台灣推廣FRC。" />
+    <meta name="description"
+        content="FRC Team 7497 team 7497 blog 我們隊伍自2019年創立，在2020年正式註冊 MARAHO#7497。 MARAHO是台灣的國蝶 -寬尾鳳蝶，在泰雅族語中有 「酋長」一意。 象徵著我們隊伍拍動這小小翅膀，如同蝴蝶效應，在台灣推廣FRC。" />
     <meta name="keywords" content="team7497, FRC 7497, MARAHO, CGSH, FRC Team 7497, 甚麼是FRC?, 臺灣FRC隊伍, team 7497 blog">
     <meta name="author" content="team7497">
     <meta name="robots" content="index , follow">
-
-    <!-- preload -->
     <link rel="preload" as="image" href="./assets/img/FRC__newlogo.webp">
     <link rel="lazy" as="image" href="./assets/img/bot2019.png">
     <link rel="lazy" as="image" href="./assets/img/bot2020.png">
@@ -25,132 +22,51 @@
     <link rel="lazy" href="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
     <link rel="preload" as="script" href="./assets/js/main.js">
     <link rel="preload" as="script" href="./assets/js/gsap.min.js">
-
-    <!-- ===== icon shortcut ===== -->
     <link rel="icon shortcut" href="./assets/img/FRC__newlogo.webp">
     <link rel="apple-touch-icon" href="./assets/img/FRC__newlogo.webp">
-
-    <!-- ===== navbar ===== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-    <!-- ===== BOX ICONS ===== -->
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css?_cacheOverride=1636013040059">
-
-    <!-- ===== google fonts ===== -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Animate.style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css">
-
-    <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-
-    <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="./assets/css/styles.css">
-
     <title>Team 7497 | MARAHO</title>
-
 </head>
 
-<body>
-    <!--===== SCROLL TOP =====-->
-    <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-chevron-up scrolltop__icon'></i>
-    </a>
-
-    <!--===== HEADER =====-->
+<body> <a href="#" class="scrolltop" id="scroll-top"> <i class='bx bx-chevron-up scrolltop__icon'></i> </a>
     <header class="l-header" id="header">
         <nav>
-            <div class="wrapper nav bd-container">
-                <a href="#home" class="nav__logo nav__link"><img class="logo" decoding="async"
-                        src="./assets/img/FRC__newlogo.webp" alt="navlogo"><span style="font-size: 30px;">FRC
-                        7497</span></a>
-                <input type="radio" name="slider" id="menu-btn">
+            <div class="wrapper nav bd-container"> <a href="#home" class="nav__logo nav__link"><img class="logo"
+                        decoding="async" src="./assets/img/FRC__newlogo.webp" alt="navlogo"><span
+                        style="font-size: 30px;">FRC 7497</span></a> <input type="radio" name="slider" id="menu-btn">
                 <input type="radio" name="slider" id="close-btn">
-                <ul class="nav-links">
-                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                    <li>
-                        <a href="./index.html" class="desktop-item nav__link nav__item">Home</a>
-                        <input type="checkbox" id="showDrop1">
-                        <label for="showDrop1"><a href="./index.html" class="mobile-item">Home</a></label>
-                    </li>
-                    <li>
-                        <a href="#about" class="desktop-item nav__link nav__item">About</a>
-                        <input type="checkbox" id="showDrop2">
-                        <label for="showDrop2" class="mobile-item">About</label>
+                <ul class="nav-links"> <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li> <a href="./index.html" class="desktop-item nav__link nav__item">Home</a> <input type="checkbox"
+                            id="showDrop1"> <label for="showDrop1"><a href="./index.html"
+                                class="mobile-item">Home</a></label> </li>
+                    <li> <a href="#about" class="desktop-item nav__link nav__item">About</a> <input type="checkbox"
+                            id="showDrop2"> <label for="showDrop2" class="mobile-item">About</label>
                         <ul class="drop-menu">
                             <li><a href="#about">FRC Team 7497</a></li>
-                            <!-- <li><a href="#about">What's FRC</a></li> -->
                             <li><a href="./about.html">Team 7497 History</a></li>
-                            <!-- <li><a href="#about">Q&A</a></li> -->
                         </ul>
                     </li>
-                    <li>
-                        <a href="./robot.html" class="desktop-item nav__link nav__item">Robots</a>
-                        <input type="checkbox" id="showDrop3">
-                        <label for="showDrop3" class="mobile-item">Robots</label>
+                    <li> <a href="./robot.html" class="desktop-item nav__link nav__item">Robots</a> <input
+                            type="checkbox" id="showDrop3"> <label for="showDrop3" class="mobile-item">Robots</label>
                         <ul class="drop-menu">
                             <li><a href="#robots">All New Robot</a></li>
                             <li><a href="./robot.html">Other Years</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a rel="noopener noreferrer" target="_blank" href="https://team7497blog.vercel.app/"
-                            class="desktop-item nav__link nav__item">Blog</a>
-                        <input type="checkbox" id="showDrop1">
+                    <li> <a rel="noopener noreferrer" target="_blank" href="https://team7497blog.vercel.app/"
+                            class="desktop-item nav__link nav__item">Blog</a> <input type="checkbox" id="showDrop1">
                         <label for="showDrop1"><a rel="noopener noreferrer" target="_blank"
-                                href="https://team7497blog.vercel.app/" class="mobile-item">Blog</a></label>
-                    </li>
-                    <!-- <li>
-                        <a href="./members.html" class="desktop-item nav__link nav__item">Portfolio</a>
-                        <input type="checkbox" id="showMega2">
-                        <label for="showMega2" class="mobile-item">Portfolio</label>
-                        <div class="mega-box">
-                            <div class="content">
-                                <div class="row">
-                                    <img src="./assets/img/newlogohome.png" alt="">
-                                </div>
-                                <div class="row">
-                                    <header>Outreach</header>
-                                    <ul class="mega-links">
-                                        <li><a href="#">Graphics</a></li>
-                                        <li><a href="#">Vectors</a></li>
-                                        <li><a href="#">Business cards</a></li>
-                                        <li><a href="#">Custom logo</a></li>
-                                    </ul>
-                                </div>
-                                <div class="row">
-                                    <header>Photos</header>
-                                    <ul class="mega-links">
-                                        <li><a href="#">Personal Email</a></li>
-                                        <li><a href="#">Business Email</a></li>
-                                        <li><a href="#">Mobile Email</a></li>
-                                        <li><a href="#">Web Marketing</a></li>
-                                    </ul>
-                                </div>
-                                <div class="row">
-                                    <header>Vedios</header>
-                                    <ul class="mega-links">
-                                        <li><a href="#">Site Seal</a></li>
-                                        <li><a href="#">VPS Hosting</a></li>
-                                        <li><a href="#">Privacy Seal</a></li>
-                                        <li><a href="#">Website design</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li> -->
-                    <!-- <li>
-                        <a target="_blank" href="/members.html" class="desktop-item nav__link nav__item">Members</a>
-                        <input type="checkbox" id="showDrop1">
-                        <label for="showDrop1"><a target="_blank" href="members.html"
-                                class="mobile-item">Members</a></label>
-                    </li> -->
-                    <li>
-                        <a href="#sponsors" class="desktop-item nav__link nav__item">Sponsors</a>
-                        <input type="checkbox" id="showDrop4">
-                        <label for="showDrop4" class="mobile-item">Sponsors</label>
+                                href="https://team7497blog.vercel.app/" class="mobile-item">Blog</a></label> </li>
+                    <!-- <li> <a href="./members.html" class="desktop-item nav__link nav__item">Portfolio</a> <input type="checkbox" id="showMega2"> <label for="showMega2" class="mobile-item">Portfolio</label> <div class="mega-box"> <div class="content"> <div class="row"> <img src="./assets/img/newlogohome.png" alt=""> </div><div class="row"> <header>Outreach</header> <ul class="mega-links"> <li><a href="#">Graphics</a></li><li><a href="#">Vectors</a></li><li><a href="#">Business cards</a></li><li><a href="#">Custom logo</a></li></ul> </div><div class="row"> <header>Photos</header> <ul class="mega-links"> <li><a href="#">Personal Email</a></li><li><a href="#">Business Email</a></li><li><a href="#">Mobile Email</a></li><li><a href="#">Web Marketing</a></li></ul> </div><div class="row"> <header>Vedios</header> <ul class="mega-links"> <li><a href="#">Site Seal</a></li><li><a href="#">VPS Hosting</a></li><li><a href="#">Privacy Seal</a></li><li><a href="#">Website design</a></li></ul> </div></div></div></li>-->
+                    <!-- <li> <a target="_blank" href="/members.html" class="desktop-item nav__link nav__item">Members</a> <input type="checkbox" id="showDrop1"> <label for="showDrop1"><a target="_blank" href="members.html" class="mobile-item">Members</a></label> </li>-->
+                    <li> <a href="#sponsors" class="desktop-item nav__link nav__item">Sponsors</a> <input
+                            type="checkbox" id="showDrop4"> <label for="showDrop4" class="mobile-item">Sponsors</label>
                         <ul class="drop-menu">
                             <li><a href="#sponsors">Our Sponsors</a></li>
                             <li><a rel="noopener noreferrer" target="_blank"
@@ -158,178 +74,108 @@
                                     Us</a></li>
                         </ul>
                     </li>
-                </ul>
-                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars nav__link wow fadeInRight"></i></label>
+                </ul> <label for="menu-btn" class="btn menu-btn"><i
+                        class="fas fa-bars nav__link wow fadeInRight"></i></label>
             </div>
         </nav>
     </header>
-
     <main class="l-main">
-        <!--===== HOME =====-->
         <section class="home" id="home">
             <div class="home__container bd-container bd-grid">
-                <div class="home__data">
-                    <span class="home__greeting">Hello, We Are FRC</span>
-                    <h1 class="home__name">Team 7497</h1>
-                    <span class="home__profession">From CGSH</span>
-                    <a rel="noopener noreferrer" target="_blank"
+                <div class="home__data"> <span class="home__greeting">Hello, We Are FRC</span>
+                    <h1 class="home__name">Team 7497</h1> <span class="home__profession">From CGSH</span> <a
+                        rel="noopener noreferrer" target="_blank"
                         href="https://www.flyingv.cc/projects/30246?fbclid=IwAR176gK_coGZSwfklGGWXmEC87B5EvAVdYYO41pBAoCiyTt1i-C3164i-u8"
-                        class="button button-light home__button">Sponsor Us</a>
-                    <a rel="noopener noreferrer" target="_blank" href="https://team7497blog.vercel.app/"
+                        class="button button-light home__button">Sponsor Us</a> <a rel="noopener noreferrer"
+                        target="_blank" href="https://team7497blog.vercel.app/"
                         class="button button-light home__button">View Our Blog</a>
                 </div>
-
-                <div class="home__social">
-                    <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/FRC7497"
-                        class="home__social-icon"><i class='bx bxl-facebook-circle'></i></a>
-                    <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/team_7497/"
-                        class="home__social-icon"><i class='bx bxl-instagram'></i></a>
-                    <a rel="noopener noreferrer" target="_blank"
+                <div class="home__social"> <a rel="noopener noreferrer" target="_blank"
+                        href="https://www.facebook.com/FRC7497" class="home__social-icon"><i
+                            class='bx bxl-facebook-circle'></i></a> <a rel="noopener noreferrer" target="_blank"
+                        href="https://www.instagram.com/team_7497/" class="home__social-icon"><i
+                            class='bx bxl-instagram'></i></a> <a rel="noopener noreferrer" target="_blank"
                         href="https://www.youtube.com/channel/UCfwhmJXKZv5R4YJ29Xoxz4w" class="home__social-icon"><i
-                            class='bx bxl-youtube'></i></a>
-                </div>
-
+                            class='bx bxl-youtube'></i></a> </div>
                 <div class="home__img">
-                    <model-viewer alt="3D logo" src="assets\gltf\7497_3D_logo_colored.glb">
-                    </model-viewer>
+                    <model-viewer alt="3D logo" src="assets\gltf\7497_3D_logo_colored.glb"> </model-viewer>
                 </div>
-
             </div>
-
             </div>
         </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section bd-container" id="about">
-            <span class="section-subtitle">FRC Team 7497</span>
+        <section class="about section bd-container" id="about"> <span class="section-subtitle">FRC Team 7497</span>
             <h2 class="section-title">About us</h2>
-
-            <div class="tabs">
-
-                <input type="radio" name="tabs" id="tab1" checked>
-                <label for="tab1">
-                    <i class="fas fa-users" style="font-size: 30px;"></i><span>FRC Team 7497</span>
-                </label>
-
-                <input type="radio" name="tabs" id="tab2">
-                <label for="tab2">
-                    <i class="fas fa-robot" style="font-size: 30px;"></i><span>What's FRC</span>
-                </label>
-
-                <input type="radio" name="tabs" id="tab3">
-                <label for="tab3">
-                    <i class="fas fa-question" style="font-size: 30px;"></i><span>Q & A</span>
-                </label>
-
+            <div class="tabs"> <input type="radio" name="tabs" id="tab1" checked> <label for="tab1"> <i
+                        class="fas fa-users" style="font-size: 30px;"></i><span>FRC Team 7497</span> </label> <input
+                    type="radio" name="tabs" id="tab2"> <label for="tab2"> <i class="fas fa-robot"
+                        style="font-size: 30px;"></i><span>What's FRC</span> </label> <input type="radio" name="tabs"
+                    id="tab3"> <label for="tab3"> <i class="fas fa-question" style="font-size: 30px;"></i><span>Q &
+                        A</span> </label>
                 <div id="tab-content1" class="tab-content">
                     <h2>FRC Team 7497</h2>
-                    <p> 我們隊伍自2019年創立，在2020年正式註冊 MARAHO#7497。
-                        <br>
-                        MARAHO是台灣的國蝶 -寬尾鳳蝶，在泰雅族語中有 「酋長」一意。
-                        <br>
-                        象徵著我們隊伍拍動這小小翅膀，如同蝴蝶效應，在台灣推廣FRC。
-                        <br>
-                        當我們專注在機器人競賽時也不忘回饋社會，每年皆會協助地方捐血活動、偏鄉推廣STEM教育。
-                    </p>
+                    <p> 我們隊伍自2019年創立，在2020年正式註冊 MARAHO#7497。 <br>MARAHO是台灣的國蝶 -寬尾鳳蝶，在泰雅族語中有 「酋長」一意。
+                        <br>象徵著我們隊伍拍動這小小翅膀，如同蝴蝶效應，在台灣推廣FRC。 <br>當我們專注在機器人競賽時也不忘回饋社會，每年皆會協助地方捐血活動、偏鄉推廣STEM教育。 </p>
                 </div>
-
                 <div id="tab-content2" class="tab-content">
                     <h2>什麼是FRC?</h2>
                     <p> 全名 FIRST Robotic Competition，為全球針對青少年所辦的機器人競賽，每年有超過3000支隊伍與上萬名高中生前來共襄盛舉。
-                        <br>
-                        於1992舉辦FRC，致今已是公認全球青少年賽事規模最大、專業的機器人競賽，也吸引許多隊伍爭相投入。
-                        <br>
-                        每年須根據不同的賽季規則，設計出一台能完成相應得分任務功能的機器人，從設計、繪圖、材料加工及組裝皆由學生親自完成，其中還包括募集資經及宣傳推廣自家隊伍。團隊人數雖不限，但通常為十人以上所組成分工合作的隊伍，透過每個人的參與，在競賽中展露鋒芒。
-                        <br>
-                        創辦人迪恩.卡門於1989建立FIRST非營利組織，為了啟發高中生對STEM熱情即動手接觸科技，因此舉辦FRC競賽。FRC的宗旨為高尚的專業精神( Gracious
+                        <br>於1992舉辦FRC，致今已是公認全球青少年賽事規模最大、專業的機器人競賽，也吸引許多隊伍爭相投入。
+                        <br>每年須根據不同的賽季規則，設計出一台能完成相應得分任務功能的機器人，從設計、繪圖、材料加工及組裝皆由學生親自完成，其中還包括募集資經及宣傳推廣自家隊伍。團隊人數雖不限，但通常為十人以上所組成分工合作的隊伍，透過每個人的參與，在競賽中展露鋒芒。
+                        <br>創辦人迪恩.卡門於1989建立FIRST非營利組織，為了啟發高中生對STEM熱情即動手接觸科技，因此舉辦FRC競賽。FRC的宗旨為高尚的專業精神( Gracious
                         Professionalism )，以類似體育型的科技競賽所舉辦，隊伍除了競爭以外，合作更是不可或缺的一部份。各隊需與其它隊伍組成聯盟一起參與比賽，展現互助與運動家精神，盡情享受比賽。
                     </p>
-
                 </div>
-
                 <div id="tab-content3" class="tab-content">
                     <div class="bd-grid">
                         <div class="accordion__item">
-                            <header class="accordion__header">
-                                <i class='bx bx-plus accordion__icon'></i>
+                            <header class="accordion__header"> <i class='bx bx-plus accordion__icon'></i>
                                 <h3 class="accordion__title">我們來自哪裡?</h3>
                             </header>
-
                             <div class="accordion__content">
-                                <p class="accordion__description">
-                                    我們來自成功高中工業機器人研究社
-                                </p>
+                                <p class="accordion__description"> 我們來自成功高中工業機器人研究社 </p>
                             </div>
                         </div>
-
                         <div class="accordion__item">
-                            <header class="accordion__header">
-                                <i class='bx bx-plus accordion__icon'></i>
+                            <header class="accordion__header"> <i class='bx bx-plus accordion__icon'></i>
                                 <h3 class="accordion__title">什麼時候比賽?</h3>
                             </header>
-
                             <div class="accordion__content">
-                                <p class="accordion__description">
-                                    準備期間為每年一月的kickoff公布題目到正式比賽前，賽程大約會排在三月到四月
-                                </p>
+                                <p class="accordion__description"> 準備期間為每年一月的kickoff公布題目到正式比賽前，賽程大約會排在三月到四月 </p>
                             </div>
                         </div>
-
                         <div class="accordion__item">
-                            <header class="accordion__header">
-                                <i class='bx bx-plus accordion__icon'></i>
+                            <header class="accordion__header"> <i class='bx bx-plus accordion__icon'></i>
                                 <h3 class="accordion__title">會不會很花錢?</h3>
                             </header>
-
                             <div class="accordion__content">
-                                <p class="accordion__description">
-                                    燒得比火還快
-                                </p>
+                                <p class="accordion__description"> 燒得比火還快 </p>
                             </div>
                         </div>
-
                         <div class="accordion__item">
-                            <header class="accordion__header">
-                                <i class='bx bx-plus accordion__icon'></i>
+                            <header class="accordion__header"> <i class='bx bx-plus accordion__icon'></i>
                                 <h3 class="accordion__title">除了每年的比賽還會有麼競賽活動?</h3>
                             </header>
-
                             <div class="accordion__content">
-                                <p class="accordion__description">
-                                    除了每年官方正式的比賽，我們在其他時段會參加台灣所舉辦的模擬賽，增進經驗及實力
-                                </p>
+                                <p class="accordion__description"> 除了每年官方正式的比賽，我們在其他時段會參加台灣所舉辦的模擬賽，增進經驗及實力 </p>
                             </div>
                         </div>
                         <div class="accordion__item">
-                            <header class="accordion__header">
-                                <i class='bx bx-plus accordion__icon'></i>
-                                <h3 class="accordion__title">我們只做機器人嗎?
-                                </h3>
+                            <header class="accordion__header"> <i class='bx bx-plus accordion__icon'></i>
+                                <h3 class="accordion__title">我們只做機器人嗎? </h3>
                             </header>
-
                             <div class="accordion__content">
-                                <p class="accordion__description">
-                                    我們除了做機器人，也需募集製作機器人所需的資金，另外我們致力於推廣機器人與 參與社區服務，包括偏鄉教育與義工活動
-                                </p>
+                                <p class="accordion__description"> 我們除了做機器人，也需募集製作機器人所需的資金，另外我們致力於推廣機器人與
+                                    參與社區服務，包括偏鄉教育與義工活動 </p>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
-
-        <!--===== Our Bots =====-->
-        <section class="testimonial section bd-container" id="robots">
-            <span class="section-subtitle">The New</span>
-            <h2 class="section-title">New Robot
-                <!--modals-->
-                <a class="buttonbots" href="#openModal-about">3D model</a>
-
+        <section class="testimonial section bd-container" id="robots"> <span class="section-subtitle">The New</span>
+            <h2 class="section-title">New Robot <a class="buttonbots" href="#openModal-about">3D model</a>
                 <div id="openModal-about" class="modalDialog">
-                    <div>
-                        <a href="#close" title="Close" class="close">X</a>
+                    <div> <a href="#close" title="Close" class="close">X</a>
                         <h2>All New 2021 Unicorn</h2>
                         <model-viewer style="width: 100%; height: 50vh;" alt="2021Robot"
                             src="assets\gltf\robot-processed.glb" camera-controls reveal="interaction" loading="auto">
@@ -337,37 +183,21 @@
                     </div>
                 </div>
             </h2>
-
             <div class="sectionbots full-height px-4 px-sm-0">
-
                 <div class="container">
                     <div class="row full-height justify-content-center">
                         <div class="col-lg-10 col-xl-8">
-                            <div class="sectionbots mx-auto text-center slider-height-padding">
-                                <input class="checkbox frst" type="radio" id="slide-1" name="slider" checked />
-
-                                <!-- <input class="checkbox scnd" type="radio" name="slider" id="slider-2" />
-                                <label for="slider-2">2020</label> -->
-                                <!-- <input class="checkbox thrd" type="radio" name="slider" id="slider-3" />
-                                <label for="slider-3">2021</label> -->
-                                <!-- <input class="checkbox foth" type="radio" name="slider" id="slider-4" />
-                                <label for="slider-4"></label> -->
+                            <div class="sectionbots mx-auto text-center slider-height-padding"> <input
+                                    class="checkbox frst" type="radio" id="slide-1" name="slider" checked />
+                                <!-- <input class="checkbox scnd" type="radio" name="slider" id="slider-2"/> <label for="slider-2">2020</label> -->
+                                <!-- <input class="checkbox thrd" type="radio" name="slider" id="slider-3"/> <label for="slider-3">2021</label> -->
+                                <!-- <input class="checkbox foth" type="radio" name="slider" id="slider-4"/> <label for="slider-4"></label> -->
                                 <ul>
-                                    <li>
-                                        <img src="./assets/img/2018white.webp" alt="">
-                                        <span><img src="./assets/img/bot2021.png" alt=""></span>
-                                    </li>
-                                    <!-- <li>
-                                        <img src="./assets/img/2019white.webp" alt="">
-                                        <span><img src="./assets/img/bot2020.png" alt=""></span>
-                                    </li> -->
-                                    <!-- <li>
-                                        <img src="./assets/img/2019white.webp" alt="">
-                                        <span><img src="./assets/img/bot2020.png" alt=""></span>
-                                    </li> -->
-                                    <!-- <li>
-                                <span>SKATEBOARD FACE</span>
-                            </li> -->
+                                    <li> <img src="./assets/img/2018white.webp" alt=""> <span><img
+                                                src="./assets/img/bot2021.png" alt=""></span> </li>
+                                    <!-- <li> <img src="./assets/img/2019white.webp" alt=""> <span><img src="./assets/img/bot2020.png" alt=""></span> </li>-->
+                                    <!-- <li> <img src="./assets/img/2019white.webp" alt=""> <span><img src="./assets/img/bot2020.png" alt=""></span> </li>-->
+                                    <!-- <li> <span>SKATEBOARD FACE</span> </li>-->
                                 </ul>
                             </div>
                         </div>
@@ -375,319 +205,152 @@
                 </div>
             </div>
         </section>
-
-        <!--===== Sponsors =====-->
-        <section class="testimonial section bd-container" id="sponsors">
-            <span class="section-subtitle">Testimonial</span>
+        <section class="testimonial section bd-container" id="sponsors"> <span
+                class="section-subtitle">Testimonial</span>
             <h2 class="section-title">Our Sponsors</h2>
-
             <div class="wrapper-sponsor">
-                <div class="card-sponsor">
-                    <input type="checkbox" id="card3" class="more">
+                <div class="card-sponsor"> <input type="checkbox" id="card3" class="more">
                     <div class="content">
                         <div class="front" style="background-image: url('./assets/img/tatanium\ \(2\).webp')">
                             <div class="inner">
                                 <h2>Tatanium</h2>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <label for="card3" class="button-sponsor" aria-hidden="true">
-                                    Details
-                                </label>
+                                <div class="rating"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                        class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </div><label for="card3" class="button-sponsor" aria-hidden="true"> Details </label>
                             </div>
                         </div>
                         <div class="back">
                             <div class="inner">
                                 <div class="description">
-                                    <h2>贊助金額 <br> $75,000+</h2>
+                                    <h2>贊助金額 <br>$75,000+</h2>
                                     <p> <span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的機器人上</span>
-                                        <br>
-                                        <span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的隊服上</span>
-                                        <br>
-                                        <span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於贊助牆上</span>
-                                        <br>
-                                        <span><i class='bx bxs-right-arrow'></i>包含所有Gold方案的權益</span>
-                                        <br>
-                                    </p>
-                                </div>
-                                <label for="card3" class="button-sponsor return" aria-hidden="true">
-                                    <i class="fas fa-arrow-left"></i>
-                                </label>
+                                        <br><span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的隊服上</span>
+                                        <br><span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於贊助牆上</span>
+                                        <br><span><i class='bx bxs-right-arrow'></i>包含所有Gold方案的權益</span> <br></p>
+                                </div><label for="card3" class="button-sponsor return" aria-hidden="true"> <i
+                                        class="fas fa-arrow-left"></i> </label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card-sponsor">
-                    <input type="checkbox" id="card1" class="more" aria-hidden="true">
+                <div class="card-sponsor"> <input type="checkbox" id="card1" class="more" aria-hidden="true">
                     <div class="content">
                         <div class="front" style="background-image: url('./assets/img/gold\ \(2\).webp')">
                             <div class="inner">
                                 <h2>Gold</h2>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <label for="card1" class="button-sponsor" aria-hidden="true">
-                                    Details
-                                </label>
+                                <div class="rating"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                        class="fas fa-star"></i> <i class="fas fa-star"></i> </div><label for="card1"
+                                    class="button-sponsor" aria-hidden="true"> Details </label>
                             </div>
                         </div>
                         <div class="back">
                             <div class="inner">
                                 <div class="description">
-                                    <h2>贊助金額 <br> $50,000 - $74,999</h2>
+                                    <h2>贊助金額 <br>$50,000 - $74,999</h2>
                                     <p> <span><i class='bx bxs-right-arrow'></i>將更大尺寸的贊助商Logo置於我們的網站上</span>
-                                        <br>
-                                        <span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的隊服上</span>
-                                        <br>
-                                        <span><i class='bx bxs-right-arrow'></i>包含所有Silver方案的權益</span>
-                                        <br>
-                                    </p>
-                                </div>
-                                <label for="card1" class="button-sponsor return" aria-hidden="true">
-                                    <i class="fas fa-arrow-left"></i>
-                                </label>
+                                        <br><span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的隊服上</span> <br><span><i
+                                                class='bx bxs-right-arrow'></i>包含所有Silver方案的權益</span> <br></p>
+                                </div><label for="card1" class="button-sponsor return" aria-hidden="true"> <i
+                                        class="fas fa-arrow-left"></i> </label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card-sponsor">
-                    <input type="checkbox" id="card2" class="more">
+                <div class="card-sponsor"> <input type="checkbox" id="card2" class="more">
                     <div class="content">
                         <div class="front" style="background-image: url('./assets/img/silver.webp')">
                             <div class="inner">
                                 <h2>Silver</h2>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <label for="card2" class="button-sponsor" aria-hidden="true">
-                                    Details
-                                </label>
+                                <div class="rating"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                        class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </div><label
+                                    for="card2" class="button-sponsor" aria-hidden="true"> Details </label>
                             </div>
                         </div>
                         <div class="back">
                             <div class="inner">
                                 <div class="description">
-                                    <h2>贊助金額 <br> $25,000 - $49,999</h2>
-                                    <p> <span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的機器人上</span>
-                                        <br>
-                                        <span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於贊助牆上</span>
-                                        <br>
-                                        <span><i class='bx bxs-right-arrow'></i>包含所有Copper方案的權益</span>
-                                        <br>
-                                    </p>
-                                </div>
-                                <label for="card2" class="button-sponsor return" aria-hidden="true">
-                                    <i class="fas fa-arrow-left"></i>
-                                </label>
+                                    <h2>贊助金額 <br>$25,000 - $49,999</h2>
+                                    <p> <span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的機器人上</span> <br><span><i
+                                                class='bx bxs-right-arrow'></i>將贊助商Logo置於贊助牆上</span> <br><span><i
+                                                class='bx bxs-right-arrow'></i>包含所有Copper方案的權益</span> <br></p>
+                                </div><label for="card2" class="button-sponsor return" aria-hidden="true"> <i
+                                        class="fas fa-arrow-left"></i> </label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card-sponsor">
-                    <input type="checkbox" id="card4" class="more">
+                <div class="card-sponsor"> <input type="checkbox" id="card4" class="more">
                     <div class="content">
                         <div class="front" style="background-image: url('./assets/img/copper.webp')">
                             <div class="inner">
                                 <h2>Copper</h2>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <label for="card4" class="button-sponsor" aria-hidden="true">
-                                    Details
-                                </label>
+                                <div class="rating"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                        class="fas fa-star"></i> </div><label for="card4" class="button-sponsor"
+                                    aria-hidden="true"> Details </label>
                             </div>
                         </div>
                         <div class="back">
                             <div class="inner">
                                 <div class="description">
-                                    <h2>贊助金額 <br> $5,000 - $24,999 </h2>
-                                    <p> <span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的網站上</span>
-                                        <br>
-                                        <span><i class='bx bxs-right-arrow'></i>利用社群媒體公開宣傳</span>
-                                        <br>
-                                        <span><i class='bx bxs-right-arrow'></i>贈與感謝狀</span>
-                                        <br>
-                                    </p>
+                                    <h2>贊助金額 <br>$5,000 - $24,999 </h2>
+                                    <p> <span><i class='bx bxs-right-arrow'></i>將贊助商Logo置於我們的網站上</span> <br><span><i
+                                                class='bx bxs-right-arrow'></i>利用社群媒體公開宣傳</span> <br><span><i
+                                                class='bx bxs-right-arrow'></i>贈與感謝狀</span> <br></p>
                                 </div>
-                                <!-- <div class="location">Cracow, Poland</div>
-                                <div class="price">60€ / day</div> -->
-                                <label for="card4" class="button-sponsor return" aria-hidden="true">
-                                    <i class="fas fa-arrow-left"></i>
-                                </label>
+                                <!-- <div class="location">Cracow, Poland</div><div class="price">60€ / day</div>-->
+                                <label for="card4" class="button-sponsor return" aria-hidden="true"> <i
+                                        class="fas fa-arrow-left"></i> </label>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!--===== Sponsor Logo =====-->
         <div class="slider">
             <div class="slide-track">
-                <div class="slide">
-                    <img src="./assets/img/Zebra_tech_logo15.webp" height="100" width="250" alt="" />
+                <div class="slide"> <img src="./assets/img/Zebra_tech_logo15.webp" height="100" width="250" alt="" />
                 </div>
-                <div class="slide">
-                    <img src="./assets/img/成功高中logo-webp.webp" height="100" width="250" alt="" />
+                <div class="slide"> <img src="./assets/img/成功高中logo-webp.webp" height="100" width="250" alt="" /> </div>
+                <div class="slide"> <img src="./assets/img/教育局LOGO-webp.webp" height="100" width="250" alt="" /> </div>
+                <div class="slide"> <img src="./assets/img/Zebra_tech_logo15.webp" height="100" width="250" alt="" />
                 </div>
-                <div class="slide">
-                    <img src="./assets/img/教育局LOGO-webp.webp" height="100" width="250" alt="" />
+                <div class="slide"> <img src="./assets/img/成功高中logo-webp.webp" height="100" width="250" alt="" /> </div>
+                <div class="slide"> <img src="./assets/img/教育局LOGO-webp.webp" height="100" width="250" alt="" /> </div>
+                <div class="slide"> <img src="./assets/img/Zebra_tech_logo15.webp" height="100" width="250" alt="" />
                 </div>
-                <div class="slide">
-                    <img src="./assets/img/Zebra_tech_logo15.webp" height="100" width="250" alt="" />
+                <div class="slide"> <img src="./assets/img/成功高中logo-webp.webp" height="100" width="250" alt="" /> </div>
+                <div class="slide"> <img src="./assets/img/教育局LOGO-webp.webp" height="100" width="250" alt="" /> </div>
+                <div class="slide"> <img src="./assets/img/Zebra_tech_logo15.webp" height="100" width="250" alt="" />
                 </div>
-                <div class="slide">
-                    <img src="./assets/img/成功高中logo-webp.webp" height="100" width="250" alt="" />
+                <div class="slide"> <img src="./assets/img/成功高中logo-webp.webp" height="100" width="250" alt="" /> </div>
+                <div class="slide"> <img src="./assets/img/教育局LOGO-webp.webp" height="100" width="250" alt="" /> </div>
+                <div class="slide"> <img src="./assets/img/Zebra_tech_logo15.webp" height="100" width="250" alt="" />
                 </div>
-                <div class="slide">
-                    <img src="./assets/img/教育局LOGO-webp.webp" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/Zebra_tech_logo15.webp" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/成功高中logo-webp.webp" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/教育局LOGO-webp.webp" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/Zebra_tech_logo15.webp" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/成功高中logo-webp.webp" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/教育局LOGO-webp.webp" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/Zebra_tech_logo15.webp" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/成功高中logo-webp.webp" height="100" width="250" alt="" />
-                </div>
+                <div class="slide"> <img src="./assets/img/成功高中logo-webp.webp" height="100" width="250" alt="" /> </div>
             </div>
         </div>
-        <!--===== CONTACTME =====-->
-        <!-- <section class="contact section bd-container" id="contact">
-            <span class="section-subtitle">For projects</span>
-            <h2 class="section-title">Contact us</h2>
-
-            <div class="contact__container bd-grid">
-                <div class="contact__content bd-grid">
-                    <div class="contact__box">
-                        <i class='bx bx-home contact__icon'></i>
-                        <h3 class="contact__title">Location</h3>
-                        <span class="contact__description">
-                            100026 臺北市中正區濟南路一段71號</span>
-                    </div>
-
-                    <div class="contact__box">
-                        <i class='bx bx-phone contact__icon'></i>
-                        <h3 class="contact__title">Phone</h3>
-                        <span class="contact__description">
-                            公關 柯翔崑 0912345678
-                        </span>
-                    </div>
-
-                    <div class="contact__box">
-                        <i class='bx bx-envelope contact__icon'></i>
-                        <h3 class="contact__title">Gmail</h3>
-                        <span class="contact__description">team7497maraho@gmail.com</span>
-                    </div>
-
-                    <div class="contact__box">
-                        <i class='bx bx-chat contact__icon'></i>
-                        <h3 class="contact__title">Chat</h3>
-                        <div>
-                            <a href="#" class="contact__social"><i class='bx bxl-whatsapp-square'></i></a>
-                            <a href="#" class="contact__social"><i class='bx bxl-telegram'></i></a>
-                            <a href="#" class="contact__social"><i class='bx bxl-messenger'></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <form action="https://formspree.io/f/mrgrvkrr" method="POST" class="contact__form">
-                    <div class="contact__inputs">
-                        <input name="name" type="text" placeholder="Name" class="contact__input">
-                        <input name="email" name="_replyto" type="email" placeholder="Email" class="contact__input">
-                    </div>
-
-                    <div class="contact__inputs">
-                        <input type="text" placeholder="Project" class="contact__input">
-                        <input type="number" placeholder="Number" class="contact__input">
-                    </div>
-
-                    <textarea id="" cols="0" rows="7" name="message" placeholder="Massage"
-                        class="contact__input"></textarea>
-                    <input type="submit" value="Send Message" class="button contact__button">
-                </form>
-            </div>
-        </section> -->
-
-        <!-- map -->
-        <!-- <section class="map section bd-container">
-            <div class="map__container br-grid">
-                <div class="map__data">
-                    <div>
-
-                        <h2 class="map__title">
-                            <i class='bx bx-map' style="font-size: 30px; color: #ffd700;"></i> Our Location
-                        </h2>
-                    </div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7565795710684!2d121.521366615361!3d25.042333644110492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a970c3bcebf3%3A0x266ad3e2f94333b2!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A5r-f5Y2X6Lev5LiA5q61NzHomZ8!5e0!3m2!1szh-TW!2stw!4v1632076080251!5m2!1szh-TW!2stw"
-                        class="map__video" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </section> -->
-
+        <!-- <section class="contact section bd-container" id="contact"> <span class="section-subtitle">For projects</span> <h2 class="section-title">Contact us</h2> <div class="contact__container bd-grid"> <div class="contact__content bd-grid"> <div class="contact__box"> <i class='bx bx-home contact__icon'></i> <h3 class="contact__title">Location</h3> <span class="contact__description"> 100026 臺北市中正區濟南路一段71號</span> </div><div class="contact__box"> <i class='bx bx-phone contact__icon'></i> <h3 class="contact__title">Phone</h3> <span class="contact__description"> 公關 柯翔崑 0912345678 </span> </div><div class="contact__box"> <i class='bx bx-envelope contact__icon'></i> <h3 class="contact__title">Gmail</h3> <span class="contact__description">team7497maraho@gmail.com</span> </div><div class="contact__box"> <i class='bx bx-chat contact__icon'></i> <h3 class="contact__title">Chat</h3> <div> <a href="#" class="contact__social"><i class='bx bxl-whatsapp-square'></i></a> <a href="#" class="contact__social"><i class='bx bxl-telegram'></i></a> <a href="#" class="contact__social"><i class='bx bxl-messenger'></i></a> </div></div></div><form action="https://formspree.io/f/mrgrvkrr" method="POST" class="contact__form"> <div class="contact__inputs"> <input name="name" type="text" placeholder="Name" class="contact__input"> <input name="email" name="_replyto" type="email" placeholder="Email" class="contact__input"> </div><div class="contact__inputs"> <input type="text" placeholder="Project" class="contact__input"> <input type="number" placeholder="Number" class="contact__input"> </div><textarea id="" cols="0" rows="7" name="message" placeholder="Massage" class="contact__input"></textarea> <input type="submit" value="Send Message" class="button contact__button"> </form> </div></section> -->
+        <!-- <section class="map section bd-container"> <div class="map__container br-grid"> <div class="map__data"> <div> <h2 class="map__title"> <i class='bx bx-map' style="font-size: 30px; color: #ffd700;"></i> Our Location </h2> </div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7565795710684!2d121.521366615361!3d25.042333644110492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a970c3bcebf3%3A0x266ad3e2f94333b2!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A5r-f5Y2X6Lev5LiA5q61NzHomZ8!5e0!3m2!1szh-TW!2stw!4v1632076080251!5m2!1szh-TW!2stw" class="map__video" allowfullscreen="" loading="lazy"></iframe> </div></div></section> -->
     </main>
-
-    <!--===== FOOTER =====-->
     <footer class="footer">
         <div class="footer__container bd-container">
-            <h1 class="footer__title">臺北市立成功高級中學 <br> FRC Team 7497</h1>
-            <div class="footer__social">
-                <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/FRC7497"
-                    class="footer__link"><i class='bx bxl-facebook-circle'></i></a>
-                <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/team_7497/"
-                    class="footer__link"><i class='bx bxl-instagram'></i></a>
-                <a rel="noopener noreferrer" target="_blank"
+            <h1 class="footer__title">臺北市立成功高級中學 <br>FRC Team 7497</h1>
+            <div class="footer__social"> <a rel="noopener noreferrer" target="_blank"
+                    href="https://www.facebook.com/FRC7497" class="footer__link"><i
+                        class='bx bxl-facebook-circle'></i></a> <a rel="noopener noreferrer" target="_blank"
+                    href="https://www.instagram.com/team_7497/" class="footer__link"><i
+                        class='bx bxl-instagram'></i></a> <a rel="noopener noreferrer" target="_blank"
                     href="https://www.youtube.com/channel/UCfwhmJXKZv5R4YJ29Xoxz4w" class="footer__link"><i
-                        class='bx bxl-youtube'></i></a>
-            </div>
+                        class='bx bxl-youtube'></i></a> </div>
             <p class="footer__copy">Copyright &#169; 2021 FRC Team 7497. All right reserved</p>
             <p class="footer__copy">Last Version V2.2.8 12.24.2021</p>
         </div>
     </footer>
-
-    <!-- ===== MODEL-VIEWER ===== -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-    <!-- ===== GSAP ===== -->
     <script src="./assets/js/gsap.min.js"></script>
-
-    <!-- ===== WOW JS ===== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-    <!-- ===== jquery ===== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         referrerpolicy="no-referrer"></script>
-
-    <!--===== MAIN JS =====-->
     <script src="./assets/js/main.js"></script>
 </body>
 

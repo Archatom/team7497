@@ -33,41 +33,9 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Team 7497 | MARAHO</title>
     <script>
-        /* passive: <boolean>, once: <boolean>, capture: <boolean> */
-        document.addEventListener('DOMContentLoaded', () => {
-            //add listeners  - useCapture
-            document
-                .querySelector('main p')
-                .addEventListener('click', f1, { capture: false, once: true });
-
-            document.body.addEventListener('touchstart', f2, {
-                capture: false,
-                passive: false,
-            });
-
-            document
-                .querySelector('model-viewer')
-                .addEventListener('touchstart', f3, {
-                    capture: false,
-                    passive: false,
-                });
-        });
-
-        function f1(ev) {
-            let num = Math.random().toString(16).substr(2, 6);
-            console.log(num);
-            ev.target.style.backgroundColor = `#${num}`;
-        }
-
-        function f2(ev) {
-            ev.preventDefault();
-            console.log('touchstart on body');
-        }
-
-        function f3(ev) {
-            ev.preventDefault();
-            console.log('touchstart on p 2');
-        }
+        window.addEventListener('touchmove', event => {
+            console.log(event);
+        }, { passive: true });
     </script>
 </head>
 
@@ -233,7 +201,7 @@
                                 <!-- <input class="checkbox foth" type="radio" name="slider" id="slider-4"/> <label for="slider-4"></label> -->
                                 <ul>
                                     <li> <img src="./assets/img/2018white.webp" alt=""> <span><img
-                                                src="./assets/img/bot2021.png" alt=""></span> </li>
+                                                src="./assets/img/bot2021.webp" alt=""></span> </li>
                                     <!-- <li> <img src="./assets/img/2019white.webp" alt=""> <span><img src="./assets/img/bot2020.png" alt=""></span> </li>-->
                                     <!-- <li> <img src="./assets/img/2019white.webp" alt=""> <span><img src="./assets/img/bot2020.png" alt=""></span> </li>-->
                                     <!-- <li> <span>SKATEBOARD FACE</span> </li>-->
